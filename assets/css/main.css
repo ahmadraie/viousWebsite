@@ -273,13 +273,17 @@ h2 span{
     transition: 0.3s;
   }
 
-  .navmenu li:hover>a,
+  
   .navmenu .active,
   .navmenu .active:focus {
     color: #3d3d3d;
-    background-color: #ffffff67;
+    background-color: #ffffff50;
   }
+  .navmenu li:hover>a{
+    color: #ffffff;
+    background-color: #ef0007;
 
+  }
   .navmenu .dropdown ul {
     margin: 0;
     padding: 0;
