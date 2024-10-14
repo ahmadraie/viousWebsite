@@ -276,8 +276,8 @@ h2 span{
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--contrast-color);
-    background-color: #ef0007;
+    color: #3d3d3d;
+    background-color: #ffffff67;
   }
 
   .navmenu .dropdown ul {
@@ -314,7 +314,7 @@ h2 span{
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
   .navmenu .dropdown ul li:hover>a {
-    color: var(--contrast-color);
+    color: #ffffff;
     background-color: var(--nav-hover-color);
   }
 
@@ -341,7 +341,7 @@ h2 span{
 /* Mobile Navigation */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);
+    color: #3d3d3d;
     font-size: 28px;
     line-height: 0;
     margin-right: 10px;
@@ -400,19 +400,19 @@ h2 span{
 
   .navmenu a i:hover,
   .navmenu a:focus i:hover {
-    background-color: var(--accent-color);
+    background-color: #ffffff;
     color: var(--contrast-color);
   }
 
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-dropdown-hover-color);
+    color: #ffffff;
   }
 
   .navmenu .active i,
   .navmenu .active:focus i {
-    background-color: var(--accent-color);
+    background-color: #ffffff;
     color: var(--contrast-color);
     transform: rotate(180deg);
   }
