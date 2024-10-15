@@ -924,7 +924,7 @@ section,
 
 .hero h2 {
   margin: 0;
-  font-size: 48px;
+  font-size: 64px;
   text-transform: uppercase;
   font-weight: 700;
   color: #fff;
@@ -932,6 +932,7 @@ section,
 
 .hero span {
   color: #ef0007;
+  
 }
 
 .hero p {
@@ -967,7 +968,10 @@ section,
   object-fit: cover;
   z-index: 1;
 }
+#changing-text{
 
+  color: #ffffff;
+}
 
 @media (max-width: 768px) {
   .hero h2 {
