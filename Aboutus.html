@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Starter Page - Day Bootstrap Template</title>
+  <title> About us - vious </title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -26,14 +26,78 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    /* General Styles */
+   
 
-  <!-- =======================================================
-  * Template Name: Day
-  * Template URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    /* Section: Title with background cover */
+    .about-title {
+      background-image: url('assets/img/cta-bg.jpg'); /* Add your background image */
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 48px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    /* Section: Image on Left, Text on Right */
+    .image-left-section img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .image-left-section p {
+      padding: 20px;
+    }
+
+    /* Section Breaks */
+    .section-break {
+      background-image: url('your-break-image.jpg'); /* Add your break background image */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 60px;
+      font-size: 24px;
+      text-align: left;
+    }
+
+    /* Circular items for branding */
+    .circular {
+      border-radius: 50%;
+      padding: 10px;
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f1f1f1;
+      margin: 20px auto;
+    }
+
+    /* Vision and Mission Section */
+    .vision-mission img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    /* Strategic Objectives and Core Values */
+    .objective-list, .core-values-list {
+      list-style: none;
+      padding: 0;
+    }
+    .objective-list li, .core-values-list li {
+      margin: 10px 0;
+    }
+  </style>
+  
 </head>
 
 <body class="starter-page-page">
@@ -145,21 +209,22 @@
       </div> -->
     </div><!-- End Page Title -->
 
-    <!-- Starter Section Section -->
-    <section id="starter-section" class="starter-section section">
+    <!-- Section 1: Title with Background Cover -->
+  <section class="about-title">
+    About Us
+  </section>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <span>Starter Section<br></span>
-        <h2>Starter Section</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up">
-        <p>Use this page as a starter for your own custom pages.</p>
+  <!-- Section 2: Image on Left, Text on Right -->
+  <section class="container py-5 image-left-section">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="your-image.jpg" alt="Company Image">
       </div>
-
-    </section><!-- /Starter Section Section -->
+      <div class="col-md-6">
+        <p>Our company, [Company Name], is dedicated to providing top-quality solutions in VR and AR. Our team of experts is committed to helping businesses transform their customer experiences.</p>
+      </div>
+    </div>
+  </section>
 
   </main>
 

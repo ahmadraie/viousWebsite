@@ -786,7 +786,7 @@ h2 span{
 .page-title {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 20px 0;
+  padding: 30px 0;
   position: relative;
 }
 
@@ -800,7 +800,7 @@ h2 span{
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding: 0 0 10px 0;
+  padding: 200px;
   margin: 0;
   font-size: 14px;
 }
