@@ -1815,3 +1815,16 @@ background-color: #ef0007;
   padding-top: 22px;
   color: #f6f6f6;
 }
+
+/* 
+career 
+*/
+
+#apply {
+
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+}
