@@ -1640,6 +1640,7 @@ border: 5px groove;
   padding: 10px 30px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   margin-bottom: 20px;
+ 
 }
 
 .service-details .services-list a {
@@ -1650,6 +1651,7 @@ border: 5px groove;
   margin: 20px 0;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   transition: 0.3s;
+  
 }
 
 .service-details .services-list a.active {
