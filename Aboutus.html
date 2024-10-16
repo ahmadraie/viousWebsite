@@ -117,6 +117,34 @@
     .objective-list li, .core-values-list li {
       margin: 10px 0;
     }
+
+    /* 
+    new core values
+    */
+    #core-values {
+  background-color: #ffffff;
+}
+
+#core-values .card {
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+#core-values .card:hover {
+  transform: translateY(-10px);
+}
+
+#core-values .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ef0007;
+}
+
+#core-values .card-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
   </style>
   
 </head>
@@ -316,6 +344,8 @@
   </div>
   </section>
 
+  
+
 
 <!-- Section 6: Core Values with Descriptions -->
 <section class="container py-5">
@@ -324,44 +354,53 @@
  <div class="container section-title" data-aos="fade-up">
   <span>Core Values<br></span>
   <h2>Core Values<br></h2>
-
-  <div class="row text-center">
-    <div class="col-md-4 mb-4">
-      <div class="circularv">
-        <h3 style="font-size: 24px; font-weight: bold; color: #ffffff;">Innovation</h3>
+<section id="core-values" class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h4 class="card-title">Innovation</h4>
+              <p class="card-text">We foster a culture of creativity and continuous improvement, driving forward-thinking solutions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h4 class="card-title">Excellence</h4>
+              <p class="card-text">We strive for the highest standards in all we do, ensuring top-quality outcomes for our clients.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h4 class="card-title">Integrity</h4>
+              <p class="card-text">We conduct our business with honesty, transparency, and respect, building trust with our clients and partners.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h4 class="card-title">Collaboration</h4>
+              <p class="card-text">We believe in the power of teamwork, working closely with our clients and partners to achieve shared goals.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h4 class="card-title">Sustainability</h4>
+              <p class="card-text">We are committed to sustainable practices that benefit our clients, communities, and the environment.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <p>We foster a culture of creativity and continuous
-        improvement,driving forward thinking solutions.</p>
     </div>
-    <div class="col-md-4 mb-4">
-      <div class="circularv">
-        <p style="font-size: 24px; font-weight: bold; color: #ffffff;">Excellence</p>
-      </div>
-      <p>We strive for the highest standards in all we do,ensuring
-        top quality outcomes for our clients.</p>
-    </div>
-    <div class="col-md-4 mb-4">
-      <div class="circularv">
-        <p style="font-size: 24px; font-weight: bold; color: #ffffff;">Integrity</p>
-      </div>
-      <p>We conduct our business with honesty, transparency,
-        and respect, building trust with our clients and partners.</p>
-    </div>
-    <div class="col-md-4 mb-4">
-      <div class="circularv">
-        <p style="font-size: 20px; font-weight: bold; color: #ffffff;">Collaboration</p>
-      </div>
-      <p>We believe in thepower of teamwork, working closely
-        with our clients and partners to achieve shared goals.</p>
-    </div>
-    <div class="col-md-4 mb-4">
-      <div class="circularv">
-        <p style="font-size: 20px; font-weight: bold; color: #ffffff;">Sustainability</p>
-      </div>
-      <p>We are committed to sustainable practices that benefit
-        our clients,communities,and the environment.</p>
-    </div>
-  </div>
+  </section>
+ 
 </section>
   
 
