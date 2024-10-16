@@ -1815,15 +1815,19 @@ Break Section
 }
 
 .btn{
+  border: 3px solid;
+  border-color: #ef0007 ;
 border-radius: 50%;
 height: 40px;
 width: 40px;
 font-size: 12px;
-background-color: #ef0007;
+font-weight: bold;
+background-color: #ffffff;
 }
 .btn:hover{
-
+border-color: #3d3d3d;
   background-color: #3d3d3d;
+  color: #ffffff;
 }
 .btn-outline-primary{
   height: 75px;
@@ -1831,7 +1835,7 @@ background-color: #ef0007;
   font-size: 16px;
   text-align: center;
   padding-top: 22px;
-  color: #f6f6f6;
+  color: #ef0007;
 }
 
 /* 
@@ -1845,6 +1849,17 @@ career
   text-align: center;
   padding-top: 20px;
   font-size: 20px;
+  color: #ef0007;
+}
+
+#apply:hover {
+
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+  color: #ffffff;
 }
 
 #footerLog{
