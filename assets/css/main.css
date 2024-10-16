@@ -1823,6 +1823,7 @@ width: 40px;
 font-size: 12px;
 font-weight: bold;
 background-color: #ffffff;
+margin-left: 85%;
 }
 .btn:hover{
 border-color: #3d3d3d;
@@ -1836,6 +1837,7 @@ border-color: #3d3d3d;
   text-align: center;
   padding-top: 22px;
   color: #ef0007;
+  margin-left: 0;
 }
 
 /* 
@@ -1850,6 +1852,7 @@ career
   padding-top: 20px;
   font-size: 20px;
   color: #ef0007;
+  margin-left: 0;
 }
 
 #apply:hover {
