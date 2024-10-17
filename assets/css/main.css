@@ -204,7 +204,7 @@ h2 span{
 
 .header .branding {
   background-color: color-mix(in srgb, var(--default-color), transparent 95%);
-  min-height: 50px;
+  min-height: 100px;
 }
 
 .header .logo {
