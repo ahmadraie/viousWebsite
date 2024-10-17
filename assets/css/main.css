@@ -1835,10 +1835,11 @@ Break Section
 border-radius: 50%;
 height: 40px;
 width: 40px;
-font-size: 12px;
+font-size: 10px;
 font-weight: bold;
 background-color: #ffffff;
 margin-left: 85%;
+color:#ef0007
 }
 .btn:hover{
 border-color: #3d3d3d;
