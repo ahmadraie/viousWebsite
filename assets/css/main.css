@@ -1643,11 +1643,26 @@ border: 5px groove;
  
 }
 
+.services-list {
+
+  position: sticky;
+  top: 140px; /* Keeps the section sticky at 20px from the top of the viewport */
+  height: fit-content;
+}
+
+
+
+@media (max-width: 768px) {
+.services-list {
+    position: static;
+}
+}
+
 .service-details .services-list a {
   display: block;
   line-height: 1;
   padding: 8px 0 8px 15px;
-  border-left: 3px solid color-mix(in srgb, var(--default-color), transparent 70%);
+  border-left: 3px solid color-mix(in srgb, #ef0007, transparent 70%);
   margin: 20px 0;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   transition: 0.3s;
