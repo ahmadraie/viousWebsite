@@ -52,98 +52,77 @@
      
     }   
 
-     /* Custom CSS */
-     .news-slider .slick-slide {
-      margin: 0 10px;
-    }
+   /* Section 01: Featured Articles */
+.featured-section .active-featured-article {
+    height: 300px;
+    position: relative;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+}
+.featured-section .carousel .item {
+    height: 300px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+}
+.featured-section .item-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
 
-    .news-slider .news-item {
-      text-align: center;
-      padding: 15px;
-      background-color: #f8f9fa;
-      border: 1px solid #dee2e6;
-      border-radius: 10px;
-    }
+/* Section 02: Break Section with Video */
+.break-section .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.break-section h2, .break-section p {
+    color: #fff;
+}
 
-    .news-slider .news-item img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
+/* Section 03: Latest News */
+.latest-news .news-item {
+    height: 250px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+}
+.latest-news .item-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
 
-    .news-slider .news-item h5 {
-      margin-top: 10px;
-    }
+/* Section 04: Break Section with Image */
+.break-section-img {
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.break-section-img h2, .break-section-img p {
+    color: #fff;
+}
 
-    .news-slider .news-item p {
-      color: #555;
-      margin: 10px 0;
-    }
+/* Section 05: Research Section */
+.research-card {
+    height: 250px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+}
+.research-card .item-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
 
-    .slick-prev, .slick-next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 24px;
-      color: #000;
-      z-index: 1;
-    }
-
-    .slick-prev {
-      left: -40px;
-    }
-
-    .slick-next {
-      right: -40px;
-    }
-
-    .slick-prev:before, .slick-next:before {
-      color: #000;
-    }
-
-    @media (max-width: 768px) {
-      .slick-prev {
-        left: -20px;
-      }
-
-      .slick-next {
-        right: -20px;
-      }
-    }
-
-     /* Custom CSS */
-      .insights img, .research img {
-      width: 100%;
-      height: auto;
-    }
-     .insights .article-item, .research .research-item {
-      margin-bottom: 30px;
-    }
-    .insights .article-item h4, .research .research-item h4 {
-      margin-top: 10px;
-    }
-     .insights .article-item p, .research .research-item p {
-      color: #555;
-    }
-    .research-item img {
-      max-width: 150px;
-      margin-bottom: 20px;
-    }
-    .research-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .carousel-item {
-      text-align: center;
-    }
-    .article-item {
-      text-align: center;
-    }
-    .research-item div {
-      text-align: center;
-
-    }
 
   </style>
 
@@ -203,94 +182,180 @@
   
     <main class="main">
 
-
-    <!-- Section 1: Title with Background Cover -->
-    <section class="about-title">
-      Investors
-    </section>
-
-   <!-- Section 1: Latest News -->
-   <section id="latest-news" class="news-slider py-5">
-    <div class="container">
-      <h2 class="mb-4 text-center" data-aos="fade-up">Latest News</h2>
-      <div class="slider">
-        <div class="news-item" data-aos="fade-right">
-          <img src="assets/img/News01.jpg" alt="News 1" class="img-fluid">
-          <h5>Title of News 1</h5>
-          <p>Short brief about news 1...</p>
-          <a href="#" class="btn btn-primary">Read More...</a>
-        </div>
-        <div class="news-item" data-aos="fade-left">
-          <img src="assets/img/News01.jpg" alt="News 2" class="img-fluid">
-          <h5>Title of News 2</h5>
-          <p>Short brief about news 2...</p>
-          <a href="#" class="btn btn-primary">Read More...</a>
-        </div>
-        <div class="news-item" data-aos="fade-right">
-          <img src="assets/img/News01.jpg" alt="News 3" class="img-fluid">
-          <h5>Title of News 3</h5>
-          <p>Short brief about news 3...</p>
-          <a href="#" class="btn btn-primary">Read More...</a>
-        </div>
-        <div class="news-item" data-aos="fade-left">
-          <img src="assets/img/News01.jpg" alt="News 4" class="img-fluid">
-          <h5>Title of News 4</h5>
-          <p>Short brief about news 4...</p>
-          <a href="#" class="btn btn-primary">Read More...</a>
-        </div>
-        <div class="news-item" data-aos="fade-right">
-          <img src="assets/img/News01.jpg" alt="News 5" class="img-fluid">
-          <h5>Title of News 5</h5>
-          <p>Short brief about news 5...</p>
-          <a href="#" class="btn btn-primary">Read More...</a>
-        </div>
-      </div>
-    </div>
+   <!-- Section 1: Title with Background Cover -->
+   <section class="about-title">
+    Insights
   </section>
+   
 
-<!-- Section 2: Latest Insights -->
-<section id="latest-insights" class="insights py-5 bg-light">
-  <div class="container">
-    <h2 class="mb-4" data-aos="fade-up">Latest Insights</h2>
-    <div class="article-item" data-aos="fade-right">
-      <img src="assets/img/News03.jpg" alt="Insight 1" class="img-fluid">
-      <h4>Insight Title 1</h4>
-      <p>Short statement about insight 1...</p>
-    </div>
-    <div class="article-item" data-aos="fade-left">
-      <img src="insight2.jpg" alt="Insight 2" class="img-fluid">
-      <h4>Insight Title 2</h4>
-      <p>Short statement about insight 2...</p>
-    </div>
-    <!-- Repeat for more insights -->
+<!-- Section 01: Featured -->
+<section class="featured-section py-5">
+  <div class="container text-center">
+      <h2 class="section-title" data-aos="fade-up">Featured Articles</h2>
+      <div class="row mt-5">
+          <!-- Left column: Active Article -->
+          <div class="col-md-6" data-aos="fade-right">
+              <div id="activeFeaturedArticle" class="active-featured-article" style="background-image: url('your-active-image1.jpg'); background-size: cover;">
+                  <div class="content p-4">
+                      <h3 id="activeTitle" class="article-title">Active Article Title 1</h3>
+                      <p id="activeDescription" class="article-description">This is the description of the active article 1.</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Right column: Carousel -->
+          <div class="col-md-6" data-aos="fade-left">
+              <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active" data-title="Article Title 1" data-description="Brief description of article 1." data-img="your-active-image1.jpg">
+                          <a href="#" class="item-link">
+                              <div class="item p-3" style="background-image: url('your-image1.jpg'); background-size: cover;">
+                                  <h4 class="item-title">Article Title 1</h4>
+                                  <p class="item-description">Brief description of article 1.</p>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="carousel-item" data-title="Article Title 2" data-description="Brief description of article 2." data-img="your-active-image2.jpg">
+                          <a href="#" class="item-link">
+                              <div class="item p-3" style="background-image: url('your-image2.jpg'); background-size: cover;">
+                                  <h4 class="item-title">Article Title 2</h4>
+                                  <p class="item-description">Brief description of article 2.</p>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="carousel-item" data-title="Article Title 3" data-description="Brief description of article 3." data-img="your-active-image3.jpg">
+                          <a href="#" class="item-link">
+                              <div class="item p-3" style="background-image: url('your-image3.jpg'); background-size: cover;">
+                                  <h4 class="item-title">Article Title 3</h4>
+                                  <p class="item-description">Brief description of article 3.</p>
+                              </div>
+                          </a>
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
+          </div>
+      </div>
   </div>
 </section>
 
-<!-- Section 3: Our Research -->
-<section id="our-research" class="research py-5">
-  <div class="container">
-    <h2 class="mb-4" data-aos="fade-up">Our Research</h2>
-    <div class="research-item" data-aos="fade-up">
-      <img src="assets/img/News02.jpg" alt="Research 1">
-      <div>
-        <h4>Research Title 1</h4>
-        <p>Short statement about research 1...</p>
-        <a href="#" class="btn btn-secondary">Read More...</a>
+<!-- Section 02: Break with Background Video -->
+<section class="break-section" style="position: relative;">
+  <video autoplay muted loop class="background-video">
+      <source src="your-video.mp4" type="video/mp4">
+  </video>
+  <div class="container py-5">
+      <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6" data-aos="fade-left">
+              <h2 class="break-title">Inspiring Title</h2>
+              <p class="break-paragraph">Engaging and impactful paragraph text that complements the title.</p>
+          </div>
       </div>
-    </div>
-    <div class="research-item" data-aos="fade-up">
-      <img src="research2.jpg" alt="Research 2">
-      <div>
-        <h4>Research Title 2</h4>
-        <p>Short statement about research 2...</p>
-        <a href="#" class="btn btn-secondary">Read More...</a>
-      </div>
-    </div>
-    <!-- Repeat for more research items -->
   </div>
 </section>
 
+<!-- Section 03: Latest News -->
+<section class="latest-news py-5">
+  <div class="container text-center">
+      <h2 class="section-title" data-aos="fade-up">Latest News</h2>
+      <div id="newsSlider" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <a href="#" class="item-link">
+                      <div class="news-item p-3" style="background-image: url('news-image1.jpg'); background-size: cover;">
+                          <h4 class="news-title">News Title 1</h4>
+                          <p class="news-description">This is a brief description for news item 1...<span class="read-more">Read More</span></p>
+                      </div>
+                  </a>
+              </div>
+              <div class="carousel-item">
+                  <a href="#" class="item-link">
+                      <div class="news-item p-3" style="background-image: url('news-image2.jpg'); background-size: cover;">
+                          <h4 class="news-title">News Title 2</h4>
+                          <p class="news-description">This is a brief description for news item 2...<span class="read-more">Read More</span></p>
+                      </div>
+                  </a>
+              </div>
+              <div class="carousel-item">
+                  <a href="#" class="item-link">
+                      <div class="news-item p-3" style="background-image: url('news-image3.jpg'); background-size: cover;">
+                          <h4 class="news-title">News Title 3</h4>
+                          <p class="news-description">This is a brief description for news item 3...<span class="read-more">Read More</span></p>
+                      </div>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
 
+<!-- Section 04: Break with Background Image -->
+<section class="break-section-img" style="background-image: url('your-background.jpg');">
+  <div class="container py-5">
+      <div class="row">
+          <div class="col-md-6" data-aos="fade-right">
+              <h2 class="break-title">Another Section Title</h2>
+              <p class="break-paragraph">This section has a compelling paragraph to engage the reader.</p>
+          </div>
+          <div class="col-md-6"></div>
+      </div>
+  </div>
+</section>
+
+<!-- Section 05: Researches -->
+<section class="research-section py-5">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6" data-aos="fade-right">
+              <h2 class="section-title">Research Highlights</h2>
+              <p class="section-paragraph">Explore the latest research and insights into digital solutions.</p>
+          </div>
+          <div class="col-md-6" data-aos="fade-left">
+              <div class="row">
+                  <div class="col-md-6 mb-4">
+                      <a href="#" class="item-link">
+                          <div class="research-card p-3" style="background-image: url('research-image1.jpg'); background-size: cover;">
+                              <h4 class="research-title">Research 1</h4>
+                              <p class="research-description">Brief description of research 1.</p>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                      <a href="#" class="item-link">
+                          <div class="research-card p-3" style="background-image: url('research-image2.jpg'); background-size: cover;">
+                              <h4 class="research-title">Research 2</h4>
+                              <p class="research-description">Brief description of research 2.</p>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                      <a href="#" class="item-link">
+                          <div class="research-card p-3" style="background-image: url('research-image3.jpg'); background-size: cover;">
+                              <h4 class="research-title">Research 3</h4>
+                              <p class="research-description">Brief description of research 3.</p>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                      <a href="#" class="item-link">
+                          <div class="research-card p-3" style="background-image: url('research-image4.jpg'); background-size: cover;">
+                              <h4 class="research-title">Research 4</h4>
+                              <p class="research-description">Brief description of research 4.</p>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
 
 
 
@@ -389,36 +454,30 @@
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-      <script>
-        $(document).ready(function() {
-          AOS.init();
-    
-          // Initialize Slick Slider
-          $('.slider').slick({
-            slidesToShow: 3,    // Show 3 items at a time
-            slidesToScroll: 1,  // Scroll one item at a time
-            arrows: true,       // Enable next/prev arrows
-            dots: false,        // Disable dots for navigation
-            infinite: true,     // Infinite looping
-            autoplay: true,    // No autoplay
-            responsive: [
-              {
-                breakpoint: 768, // At screen width <= 768px, show 1 item
-                settings: {
-                  slidesToShow: 1
-                }
-              },
-              {
-                breakpoint: 992, // At screen width <= 992px, show 2 items
-                settings: {
-                  slidesToShow: 2
-                }
-              }
-            ]
-          });
-        });
-      </script>
+      
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+
+  // Event listener for carousel change
+  var featuredCarousel = document.getElementById('featuredCarousel');
+  featuredCarousel.addEventListener('slide.bs.carousel', function (event) {
+      // Get the new active item
+      var activeItem = event.relatedTarget;
+      
+      // Get the title, description, and background image from data attributes
+      var newTitle = activeItem.getAttribute('data-title');
+      var newDescription = activeItem.getAttribute('data-description');
+      var newImage = activeItem.getAttribute('data-img');
+      
+      // Update the active featured article on the left side
+      document.getElementById('activeTitle').textContent = newTitle;
+      document.getElementById('activeDescription').textContent = newDescription;
+      document.getElementById('activeFeaturedArticle').style.backgroundImage = 'url(' + newImage + ')';
+  });
+</script>
 
     </body>
 
