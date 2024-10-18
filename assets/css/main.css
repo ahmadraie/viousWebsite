@@ -1093,9 +1093,20 @@ section,
 
 .clients .swiper-wrapper {
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .clients .swiper-slide img {
+  width: 150px; /* Increase logo size as needed */
+  height: 100%;
   transition: 0.3s;
 }
 
