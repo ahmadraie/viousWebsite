@@ -162,6 +162,9 @@
 }
 
 
+
+
+
       /* Ensure the poster image is responsive */
       .video-poster {
       width: 100%;
@@ -333,38 +336,7 @@
   </div>
 </section>
 
- <!-- Section -->
- <section class="py-5">
-    <div class="container">
-      <div class="row align-items-center">
-        
-        <!-- Left Column: Title and Paragraph -->
-        <div class="col-md-6">
-          <h2 class="mb-3">Your Title Here</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
-        </div>
 
-        <!-- Right Column: YouTube Video with Play Button -->
-        <div class="col-md-6 text-center">
-          <div class="position-relative">
-            <!-- Poster Image -->
-            <img src="https://via.placeholder.com/600x400" alt="Video Poster" id="video-poster" class="video-poster">
-
-            <!-- YouTube video iframe, initially hidden -->
-            <iframe id="youtube-video" class="video-iframe" src="https://www.youtube.com/embed/86cFLx7qDXI" 
-              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
-
-            <!-- Play Button Overlay -->
-            <button class="custom-btn  position-absolute top-50 start-50 translate-middle" id="play-button">
-                <i class="fas fa-play"></i> <!-- Font Awesome Play Icon -->
-            </button>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
 
 <!-- Section 03: Latest News -->
 <section class="latest-news-section py-5">
@@ -376,8 +348,8 @@
               <div class="card news-card" data-aos="fade-right">
                   <img src="assets/img/News01.jpg" class="card-img-top" alt="News Image 1">
                   <div class="card-body">
-                      <h5 class="card-title">News Title 1</h5>
-                      <p class="card-text">This is a brief description of news 1...<span class="dots">...</span><span class="more-text"> full description of the news 1.</span></p>
+                      <h5 class="card-title">Gitex 2024: Showcasing Innovations in Technology</h5>
+                      <p class="card-text">Gitex 2024 in Dubai promises groundbreaking tech advancements, featuring startups and major brands showcasing their latest innovations and solutions.<span class="dots">...</span><span class="more-text"> full description of the news 1.</span></p>
                       <a href="news-page1.html" class="btn btn-primary read-more">...</a>
                   </div>
               </div>
@@ -387,8 +359,8 @@
               <div class="card news-card" data-aos="fade-left">
                   <img src="assets/img/News02.jpg" class="card-img-top" alt="News Image 2">
                   <div class="card-body">
-                      <h5 class="card-title">News Title 2</h5>
-                      <p class="card-text">This is a brief description of news 2...<span class="dots">...</span><span class="more-text"> full description of the news 2.</span></p>
+                      <h5 class="card-title">Futures of Technology in Saudi Arabia</h5>
+                      <p class="card-text">Saudi Arabia embraces digital transformation, investing heavily in AI, blockchain, and smart cities to enhance economic diversification and innovation.<span class="dots">...</span><span class="more-text"> full description of the news 2.</span></p>
                       <a href="news-page2.html" class="btn btn-primary read-more">...</a>
                   </div>
               </div>
@@ -398,8 +370,8 @@
               <div class="card news-card" data-aos="fade-right">
                   <img src="assets/img/News03.jpg" class="card-img-top" alt="News Image 3">
                   <div class="card-body">
-                      <h5 class="card-title">News Title 3</h5>
-                      <p class="card-text">This is a brief description of news 3...<span class="dots">...</span><span class="more-text"> full description of the news 3.</span></p>
+                      <h5 class="card-title">Foresight Futures: Shaping Tomorrow’s Innovations</h5>
+                      <p class="card-text">Foresight Futures aims to identify and develop cutting-edge technologies, promoting sustainable solutions and fostering collaboration among industry leaders<span class="dots">...</span><span class="more-text"> full description of the news 3.</span></p>
                       <a href="news-page3.html" class="btn btn-primary read-more">...</a>
                   </div>
               </div>
@@ -471,7 +443,39 @@
 </section>
 
 
+ <!-- Section -->
+ <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- Left Column: Title and Paragraph -->
+        <div class="col-md-6">
+          <h1 class="mb-3" style="color: #ef0007;"><i class="bi bi-quote"></i></h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+        </div>
 
+        <!-- Right Column: YouTube Video with Play Button -->
+        <div class="col-md-6 text-center">
+          <div class="position-relative">
+            <!-- Poster Image -->
+            <img src="https://via.placeholder.com/600x400" alt="Video Poster" id="video-poster" class="video-poster">
+
+            <!-- YouTube video iframe, initially hidden -->
+            <iframe id="youtube-video" class="video-iframe" src="https://www.youtube.com/embed/86cFLx7qDXI" 
+              frameborder="0" allow="accelerometer; autoplay;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+
+            
+            <!-- Play Button Overlay -->
+            <button class="custom-btn  position-absolute top-50 start-50 translate-middle" id="play-button">
+                <i class="fas fa-play"></i> <!-- Font Awesome Play Icon -->
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
 
     </main>
@@ -629,6 +633,9 @@
 
   
 </script>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 <script>
     document.getElementById('play-button').addEventListener('click', function () {
       // Hide the poster and play button
@@ -638,7 +645,7 @@
       // Show the YouTube iframe and start the video
       const iframe = document.getElementById('youtube-video');
       iframe.style.display = 'block';
-      iframe.src += '&autoplay=1';
+      iframe.src += '?autoplay=1';
     });
   </script>
     </body>
