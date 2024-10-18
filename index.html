@@ -30,6 +30,23 @@
   <!-- =======================================================
   
   ======================================================== -->
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+
+  
+
+
 <style>
 
   /* Section Breaks */
@@ -45,6 +62,39 @@
       font-size: 30px;
       font-weight: bold;
     }
+
+
+/* News Section: Latest News */
+.latest-news-section .news-slider .news-item {
+    padding: 10px;
+}
+.latest-news-section .news-card {
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+.latest-news-section .news-card:hover {
+    transform: scale(1.05);
+}
+.latest-news-section .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.latest-news-section .card-text {
+    font-size: 1rem;
+    position: relative;
+}
+.latest-news-section .dots {
+    display: inline;
+}
+.latest-news-section .more-text {
+    display: none;
+}
+.latest-news-section .read-more {
+    margin-top: 10px;
+}
+
+
+    
 </style>
 
   
@@ -458,63 +508,50 @@ increasingly digital world.
 <!-- /Clients Section -->
 
 
-
-
-
-<!-- News Section -->
-<section id="news" class="news section py-5">
-  <!-- Section Title -->
-  <div class="container section-title text-center" data-aos="fade-up">
-    <span>Latest News</span>
-    <h2>Latest News</h2>
-  </div>
-
-  <!-- News Cards -->
-  <div class="container">
-    <div class="row">
-      <!-- News Item 1 -->
-      <div class="col-md-4">
-        <div class="card mb-4">
-          <img src="assets\img\News01.jpg" class="card-img-top" alt="News Image 1">
-          <div  class="card-body ">
-            <h5 class="card-title">GITEX 2024: The Future of Technology Unveiled in Dubai</h5>
-            <p class="card-text">The highly anticipated GITEX Global 2024 kicked off in Dubai, showcasing cutting-edge innovations in AI, cloud computing, and virtual reality. Industry leaders are set to reveal transformative technologies that will shape the future of digital industries.</p>
-            <a style="color: #ef0007;" href="#" class="btn btn-primary">...</a>
+<!-- Section 03: Latest News -->
+<section class="latest-news-section py-5">
+  <div class="container text-center">
+      <h2 class="section-title" data-aos="fade-up">Latest News</h2>
+      <div class="news-slider mt-4">
+          <!-- News Item 1 -->
+          <div class="news-item">
+              <div class="card news-card" data-aos="fade-right">
+                  <img src="assets/img/News01.jpg" class="card-img-top" alt="News Image 1">
+                  <div class="card-body">
+                      <h5 class="card-title">News Title 1</h5>
+                      <p class="card-text">This is a brief description of news 1...<span class="dots">...</span><span class="more-text"> full description of the news 1.</span></p>
+                      <a href="news-page1.html" class="btn btn-primary read-more">...</a>
+                  </div>
+              </div>
           </div>
-        </div>
-      </div>
-
-      <!-- News Item 2 -->
-      <div class="col-md-4">
-        <div class="card mb-4">
-          <img src="assets\img\News02.jpg" class="card-img-top" alt="News Image 2">
-          <div class="card-body">
-            <h5 class="card-title">AI-Driven Solutions Revolutionize Customer Service in 2024</h5>
-            <p class="card-text">Artificial Intelligence is taking center stage in customer service, with advanced AI-driven chatbots and automation improving response times and customer satisfaction. Companies worldwide are leveraging these technologies to enhance customer engagement and streamline operations.</p>
-            <a style="color: #ef0007;" href="#" class="btn btn-primary">...</a>
+          <!-- News Item 2 -->
+          <div class="news-item">
+              <div class="card news-card" data-aos="fade-left">
+                  <img src="assets/img/News02.jpg" class="card-img-top" alt="News Image 2">
+                  <div class="card-body">
+                      <h5 class="card-title">News Title 2</h5>
+                      <p class="card-text">This is a brief description of news 2...<span class="dots">...</span><span class="more-text"> full description of the news 2.</span></p>
+                      <a href="news-page2.html" class="btn btn-primary read-more">...</a>
+                  </div>
+              </div>
           </div>
-        </div>
-      </div>
-
-      <!-- News Item 3 -->
-      <div class="col-md-4">
-        <div class="card mb-4">
-          <img src="assets\img\News03.jpg" class="card-img-top" alt="News Image 3">
-          <div class="card-body">
-            <h5 class="card-title">Real Estate Market Sees Surge in Virtual Tours Demand</h5>
-            <p class="card-text">With the rise of digital technologies, the real estate market has experienced a significant increase in demand for 3D virtual tours and immersive experiences. Developers are turning to VR to offer prospective buyers a more engaging way to explore properties remotely.</p>
-            <a style="color: #ef0007; " href="#" class="btn btn-primary ">...</a>
+          <!-- News Item 3 -->
+          <div class="news-item">
+              <div class="card news-card" data-aos="fade-right">
+                  <img src="assets/img/News03.jpg" class="card-img-top" alt="News Image 3">
+                  <div class="card-body">
+                      <h5 class="card-title">News Title 3</h5>
+                      <p class="card-text">This is a brief description of news 3...<span class="dots">...</span><span class="more-text"> full description of the news 3.</span></p>
+                      <a href="news-page3.html" class="btn btn-primary read-more">....</a>
+                  </div>
+              </div>
           </div>
-        </div>
+          <!-- Add more news items as needed -->
       </div>
-    </div>
-
-    <!-- Load More Button -->
-    <div class="text-center mt-4">
-      <!-- <a href="#" class="btn btn-outline-primary"> More </a> -->
-    </div>
   </div>
 </section>
+
+
 
 <!-- Section Break 2 -->
 <section class="section-break text-end">
@@ -646,6 +683,11 @@ increasingly digital world.
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
   const texts = [
@@ -667,6 +709,42 @@ increasingly digital world.
   }, 4000); // Change every 4 seconds
 });
   </script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+<script>
+  $(document).ready(function(){
+      $('.news-slider').slick({
+          slidesToShow: 2,   // Display 3 items side by side
+          slidesToScroll: 1,
+          arrows: true,
+          dots: true,
+          autoplay: true,
+          autoplaySpeed: 4000,
+          responsive: [
+              {
+                  breakpoint: 1024,
+                  settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                      infinite: true,
+                      dots: true
+                  }
+              },
+              {
+                  breakpoint: 600,
+                  settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                  }
+              }
+          ]
+      });
+  });
+</script>
+
 
 </body>
 

@@ -31,9 +31,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
 
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
 
   <style>
     /* Section: Title with background cover */
@@ -73,43 +79,74 @@
 }
 
 /* Section 02: Break Section with Video */
-.break-section .background-video {
+.break-video-section {
+    position: relative;
+    height: 400px;
+
+}
+.break-video-section .background-video .cx {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     object-fit: cover;
-    z-index: -1;
+    z-index: -1 ;
 }
-.break-section h2, .break-section p {
-    color: #fff;
+.break-video-section .text-column h2,
+.break-video-section .text-column p {
+    color: #ef0007;
+    z-index: 2;
+}
+.break-video-section .empty-column {
+    /* Optional: add styling if needed */
 }
 
-/* Section 03: Latest News */
-.latest-news .news-item {
-    height: 250px;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: overlay;
+
+/* News Section: Latest News */
+.latest-news-section .news-slider .news-item {
+    padding: 10px;
 }
-.latest-news .item-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
+.latest-news-section .news-card {
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
 }
+.latest-news-section .news-card:hover {
+    transform: scale(1.05);
+}
+.latest-news-section .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.latest-news-section .card-text {
+    font-size: 1rem;
+    position: relative;
+}
+.latest-news-section .dots {
+    display: inline;
+}
+.latest-news-section .more-text {
+    display: none;
+}
+.latest-news-section .read-more {
+    margin-top: 10px;
+}
+
 
 /* Section 04: Break Section with Image */
-.break-section-img {
+.break-image-section {
     height: 400px;
     background-position: center;
     background-size: cover;
     position: relative;
 }
-.break-section-img h2, .break-section-img p {
-    color: #fff;
+.break-image-section .text-column h2,
+.break-image-section .text-column p {
+    color: #ef0007;
 }
-
+.break-image-section .empty-column {
+    /* Optional: add styling if needed */
+}
 /* Section 05: Research Section */
 .research-card {
     height: 250px;
@@ -122,6 +159,9 @@
     text-decoration: none;
     color: inherit;
 }
+
+
+
 
 
   </style>
@@ -245,66 +285,87 @@
   </div>
 </section>
 
-<!-- Section 02: Break with Background Video -->
-<section class="break-section" style="position: relative;">
-  <video autoplay muted loop class="background-video">
-      <source src="your-video.mp4" type="video/mp4">
-  </video>
-  <div class="container py-5">
-      <div class="row">
-          <div class="col-md-6"></div>
-          <div class="col-md-6" data-aos="fade-left">
-              <h2 class="break-title">Inspiring Title</h2>
-              <p class="break-paragraph">Engaging and impactful paragraph text that complements the title.</p>
+ <!-- Section -->
+ <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- Left Column: Title and Paragraph -->
+        <div class="col-md-6">
+          <h2 class="mb-3">Your Title Here</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+        </div>
+
+        <!-- Right Column: YouTube Video with Play Button -->
+        <div class="col-md-6 text-center">
+          <div class="position-relative">
+            <!-- YouTube video embed -->
+            <iframe id="youtube-video" width="100%" height="350" src="https://youtu.be/nPe39OFnJrw" 
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <!-- Play Button Overlay -->
+            <!-- <button class="btn btn-primary  position-absolute top-50 start-50 translate-middle" onclick="document.getElementById('youtube-video').src += '&autoplay=1'">
+              Play
+            </button> -->
           </div>
+        </div>
+        
       </div>
-  </div>
-</section>
+    </div>
+  </section>
 
 <!-- Section 03: Latest News -->
-<section class="latest-news py-5">
+<section class="latest-news-section py-5">
   <div class="container text-center">
       <h2 class="section-title" data-aos="fade-up">Latest News</h2>
-      <div id="newsSlider" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <a href="#" class="item-link">
-                      <div class="news-item p-3" style="background-image: url('news-image1.jpg'); background-size: cover;">
-                          <h4 class="news-title">News Title 1</h4>
-                          <p class="news-description">This is a brief description for news item 1...<span class="read-more">Read More</span></p>
-                      </div>
-                  </a>
-              </div>
-              <div class="carousel-item">
-                  <a href="#" class="item-link">
-                      <div class="news-item p-3" style="background-image: url('news-image2.jpg'); background-size: cover;">
-                          <h4 class="news-title">News Title 2</h4>
-                          <p class="news-description">This is a brief description for news item 2...<span class="read-more">Read More</span></p>
-                      </div>
-                  </a>
-              </div>
-              <div class="carousel-item">
-                  <a href="#" class="item-link">
-                      <div class="news-item p-3" style="background-image: url('news-image3.jpg'); background-size: cover;">
-                          <h4 class="news-title">News Title 3</h4>
-                          <p class="news-description">This is a brief description for news item 3...<span class="read-more">Read More</span></p>
-                      </div>
-                  </a>
+      <div class="news-slider mt-4">
+          <!-- News Item 1 -->
+          <div class="news-item">
+              <div class="card news-card" data-aos="fade-right">
+                  <img src="assets/img/News01.jpg" class="card-img-top" alt="News Image 1">
+                  <div class="card-body">
+                      <h5 class="card-title">News Title 1</h5>
+                      <p class="card-text">This is a brief description of news 1...<span class="dots">...</span><span class="more-text"> full description of the news 1.</span></p>
+                      <a href="news-page1.html" class="btn btn-primary read-more">...</a>
+                  </div>
               </div>
           </div>
+          <!-- News Item 2 -->
+          <div class="news-item">
+              <div class="card news-card" data-aos="fade-left">
+                  <img src="assets/img/News02.jpg" class="card-img-top" alt="News Image 2">
+                  <div class="card-body">
+                      <h5 class="card-title">News Title 2</h5>
+                      <p class="card-text">This is a brief description of news 2...<span class="dots">...</span><span class="more-text"> full description of the news 2.</span></p>
+                      <a href="news-page2.html" class="btn btn-primary read-more">...</a>
+                  </div>
+              </div>
+          </div>
+          <!-- News Item 3 -->
+          <div class="news-item">
+              <div class="card news-card" data-aos="fade-right">
+                  <img src="assets/img/News03.jpg" class="card-img-top" alt="News Image 3">
+                  <div class="card-body">
+                      <h5 class="card-title">News Title 3</h5>
+                      <p class="card-text">This is a brief description of news 3...<span class="dots">...</span><span class="more-text"> full description of the news 3.</span></p>
+                      <a href="news-page3.html" class="btn btn-primary read-more">...</a>
+                  </div>
+              </div>
+          </div>
+          <!-- Add more news items as needed -->
       </div>
   </div>
 </section>
 
-<!-- Section 04: Break with Background Image -->
-<section class="break-section-img" style="background-image: url('your-background.jpg');">
-  <div class="container py-5">
+<!-- Section 04: Break with Image -->
+<section class="break-image-section py-5" style="background-image: url('./assets/img/breakabout.jpg'); background-size: cover;">
+  <div class="container">
       <div class="row">
-          <div class="col-md-6" data-aos="fade-right">
-              <h2 class="break-title">Another Section Title</h2>
-              <p class="break-paragraph">This section has a compelling paragraph to engage the reader.</p>
+          <div class="col-md-6 text-column">
+              <h2 class="section-title" data-aos="fade-up">Break Section with Image Title</h2>
+              <p class="section-paragraph" data-aos="fade-up">This is a paragraph in the break section with background image.</p>
           </div>
-          <div class="col-md-6"></div>
+          <div class="col-md-6 empty-column"></div>
       </div>
   </div>
 </section>
@@ -476,6 +537,40 @@
       document.getElementById('activeTitle').textContent = newTitle;
       document.getElementById('activeDescription').textContent = newDescription;
       document.getElementById('activeFeaturedArticle').style.backgroundImage = 'url(' + newImage + ')';
+  });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+<script>
+  $(document).ready(function(){
+      $('.news-slider').slick({
+          slidesToShow: 2,   // Display 3 items side by side
+          slidesToScroll: 1,
+          arrows: true,
+          dots: true,
+          autoplay: true,
+          autoplaySpeed: 4000,
+          responsive: [
+              {
+                  breakpoint: 1024,
+                  settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                      infinite: true,
+                      dots: true
+                  }
+              },
+              {
+                  breakpoint: 600,
+                  settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                  }
+              }
+          ]
+      });
   });
 </script>
 
