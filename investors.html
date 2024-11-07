@@ -31,27 +31,42 @@
    
 
     /* Section: Title with background cover */
-    .about-title {
-      background-image: url('assets/img/investorspage.jpg') ; /* Add your background image */
-      background-size: cover;
-      background-position: center;
-      height: 500px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: lightgray;
-      font-size: 48px;
-      font-weight: bold;
-      text-align: center;
-     
-    }
-    .about-title h1 {
-    height: fit-content;
-    width: 230px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #ef0007;
-  }
+       .about-title {
+  background-image: url('assets/img/investorspage.jpg'); /* Add your background image */
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: lightgray;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  position: relative; /* Enable positioning for the overlay */
+  overflow: hidden;
+}
+
+.about-title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: 1; /* Ensure the overlay is behind the content */
+}
+
+.about-title h1 {
+  position: relative; /* Bring content above the overlay */
+  z-index: 2; /* Ensure the heading is above the overlay */
+  height: fit-content;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 20px; /* Optional: add padding for a better look */
+  text-align: center;
+}
 
     
     /* Custom animations */
