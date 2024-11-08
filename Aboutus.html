@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title> About us - vious </title>
+  <title> About us - Vious </title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,67 +30,76 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <style>
     /* General Styles */
-   
+
 
     /* Section: Title with background cover */
     .about-title {
-  background-image: url('assets/img/AboutUsPages.jpg'); /* Add your background image */
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: lightgray;
-  font-size: 48px;
-  font-weight: bold;
-  text-align: center;
-  position: relative; /* Enable positioning for the overlay */
-  overflow: hidden;
-}
+      background-image: url('assets/img/AboutUsPages.jpg');
+      /* Add your background image */
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: lightgray;
+      font-size: 48px;
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+      /* Enable positioning for the overlay */
+      overflow: hidden;
+    }
 
-.about-title::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
-  z-index: 1; /* Ensure the overlay is behind the content */
-}
+    .about-title::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Black overlay with 50% opacity */
+      z-index: 1;
+      /* Ensure the overlay is behind the content */
+    }
 
-.about-title h1 {
-  position: relative; /* Bring content above the overlay */
-  z-index: 2; /* Ensure the heading is above the overlay */
-  height: fit-content;
-  font-weight: bold;
-  color: #fff;
-  padding: 10px 20px; /* Optional: add padding for a better look */
-  text-align: center;
-}
-     
+    .about-title h1 {
+      position: relative;
+      /* Bring content above the overlay */
+      z-index: 2;
+      /* Ensure the heading is above the overlay */
+      height: fit-content;
+      font-weight: bold;
+      color: #fff;
+      padding: 10px 20px;
+      /* Optional: add padding for a better look */
+      text-align: center;
+    }
+
 
     /* Section: Image on Left, Text on Right */
     .image-left-section img {
       width: 100%;
       height: auto;
-      border-radius: 10px; 
-      
+      border-radius: 10px;
+
     }
+
     .image-left-section p {
       padding: 20px;
     }
 
     /* Section Breaks */
     .section-break {
-      background-image: url('assets/img/breakabout.jpg'); /* Add your break background image */
+      background-image: url('assets/img/breakabout.jpg');
+      /* Add your break background image */
       background-size: cover;
       background-position: center;
       color: #ef0007;
       padding: 60px;
       text-align: center;
-      text-shadow:#f1f1f100;
+      text-shadow: #f1f1f100;
       font-size: 30px;
       font-weight: bold;
     }
@@ -132,11 +143,14 @@
     }
 
     /* Strategic Objectives and Core Values */
-    .objective-list, .core-values-list {
+    .objective-list,
+    .core-values-list {
       list-style: none;
       padding: 0;
     }
-    .objective-list li, .core-values-list li {
+
+    .objective-list li,
+    .core-values-list li {
       margin: 10px 0;
     }
 
@@ -144,31 +158,30 @@
     new core values
     */
     #core-values {
-  background-color: #ffffff;
-}
+      background-color: #ffffff;
+    }
 
-#core-values .card {
-  border: none;
-  transition: transform 0.3s ease-in-out;
-}
+    #core-values .card {
+      border: none;
+      transition: transform 0.3s ease-in-out;
+    }
 
-#core-values .card:hover {
-  transform: translateY(-10px);
-}
+    #core-values .card:hover {
+      transform: translateY(-10px);
+    }
 
-#core-values .card-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ef0007;
-}
+    #core-values .card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ef0007;
+    }
 
-#core-values .card-text {
-  font-size: 1rem;
-  color: #6c757d;
-}
-
+    #core-values .card-text {
+      font-size: 1rem;
+      color: #6c757d;
+    }
   </style>
-  
+
 </head>
 
 <body class="starter-page-page">
@@ -176,48 +189,48 @@
   <header id="header" class="header fixed-top">
 
     <div class="topbar d-flex align-items-center">
-     <div class="container d-flex justify-content-center justify-content-md-between">
-       <div class="contact-info d-flex align-items-center">
-         <!-- <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">Info@vious.com</a></i>
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <!-- <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">Info@vious.com</a></i>
          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+966 509 711 777</span></i> -->
-       </div>
-       <div class="social-links d-none d-md-flex align-items-center">
-         <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-       </div>
-     </div>
-   </div>
-   
-   <!-- End Top Bar -->
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
 
-   <div class="branding d-flex align-items-center">
+    <!-- End Top Bar -->
 
-     <div class="container position-relative d-flex align-items-center justify-content-between">
-       <a href="./index" class="logo d-flex align-items-center">
-         <!-- Uncomment the line below if you also wish to use an image logo -->
-         <!-- <img src="assets/img/logo.png" alt=""> -->
-         <img src="assets\img\viousBlack.png" alt="">
-       </a>
+    <div class="branding d-flex align-items-center">
 
-       <nav id="navmenu" class="navmenu">
-         <ul>
-           <li><a href="./index" class="active">Home</a></li>
-           <li><a href="./Aboutus">Overview</a></li>
-           <li><a href="./Experties">Expertise</a></li>
-           <li><a href="./Industries">Industries</a></li>
-           <li><a href="./partners">Partners</a></li>
-           <li><a href="./investors">Investors</a></li>
-           <li><a href="./insights">Insights</a></li>
-         </ul>
-         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-       </nav>
-     </div>
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="./index" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <img src="assets\img\viousBlack.png" alt="">
+        </a>
 
-   </div>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="./index" class="active">Home</a></li>
+            <li><a href="./Aboutus">Overview</a></li>
+            <li><a href="./Experties">Expertise</a></li>
+            <li><a href="./Industries">Industries</a></li>
+            <li><a href="./partners">Partners</a></li>
+            <li><a href="./investors">Investors</a></li>
+            <li><a href="./insights">Insights</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
 
- </header>
+    </div>
+
+  </header>
 
   <main class="main">
 
@@ -235,198 +248,209 @@
     </div><!-- End Page Title -->
 
     <!-- Section 1: Title with Background Cover -->
-  <section class="about-title">
-   <h1>Overview</h1> 
-  </section>
+    <section class="about-title">
+      <h1>Overview</h1>
+    </section>
 
-  <!-- Section 2: Image on Left, Text on Right -->
-  <section class="container py-5 image-left-section">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <img src="assets\img\CompanyImage.png" alt="Company Image">
-      </div>
-      <div class="col-md-6">
-        <p style="font-size: 22px;">is a  premier digital technologies and 
-          solutions company, dedicated to advancing the 
-          forefront of the Fourth Industrial Revolution. By 
-          integrating cutting edge technologies and innovative 
-          strategies, VIOUS empowers businesses to thrive in 
-          an increasingly digital world. Our commitment to 
-          excellence and innovation positions us as a leader in 
-          delivering transformative solutions that drive 
-          efficiency, growth, and sustainability.</p>
-      </div>
-    </div>
-  </section>
-<!-- Section Break 2 -->
-  <section class="section-break text-end">
-    <div class="container">
-      <p>Our strategic direction, rooted in our vision, mission, and core values, guides us in delivering exceptional value to our clients and contributing to a sustainable future.
-
-      </p>
-    </div>
-  </section>
-
-  <!-- Section 4: Vision and Mission -->
-   <section class="container py-5 vision-mission">
-    <div class="row text-center">
-      <div class="col-md-6">
-        <div class="circular">
-          <img src="assets\img\Vision.png" alt="Vision Icon">
+    <!-- Section 2: Image on Left, Text on Right -->
+    <section class="container py-5 image-left-section">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="assets\img\CompanyImage.png" alt="Company Image">
         </div>
-        <h2>Vision</h2>
-        <p>To emerge as a leading hub of knowledge-driven
-          innovation and a catalyst for digital transformation.</p>
-      </div>
-      <div class="col-md-6">
-        <div class="circular">
-          <img src="assets\img\Mision.png" alt="Mission Icon">
+        <div class="col-md-6">
+          <p style="font-size: 22px;">Is a premier digital technologies and
+            solutions company, dedicated to advancing the
+            forefront of the Fourth Industrial Revolution. By
+            integrating cutting edge technologies and innovative
+            strategies, Vious empowers businesses to thrive in
+            an increasingly digital world. Our commitment to
+            excellence and innovation positions us as a leader in
+            delivering transformative solutions that drive
+            efficiency, growth, and sustainability.</p>
         </div>
-        <h2>Mission</h2>
-        <p> To deliver cutting-edge digital and technological
-          services and solutions that empower our clients to
-          reach their full potential, driving innovation,
-          efficiency, and sustainable growth, by leveraging
-          the application of global methodologies and
-          industry-leading best practices.</p>
       </div>
-    </div>
-  </section>
-
-
-   <!-- Section 3: Vious Strategic Direction -->
-   <!-- Section Title -->
- <div class="container section-title" data-aos="fade-up">
-  <span>Strategic Objectives<br></span>
-  <h2>Strategic Objectives<br></h2>
-  <!-- <p>Our strategic direction, rooted in our vision, mission, and core values, guides us in delivering exceptional value to our clients and contributing to a sustainable future.</p> -->
-
-
-<!-- End Section Title -->
-   <!-- Cards Section -->
-    <section id="cards" class="cards section">
-      
+    </section>
+    <!-- Section Break 2 -->
+    <section class="section-break text-end">
       <div class="container">
+        <p>Built on values, dedicated to a sustainable future.
 
-        <div class="row no-gutters">
+        </p>
+      </div>
+    </section>
 
-          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="100">
-            <span>01</span>
-            <h4>Innovation Leadership</h4>
-            <p>Continuously develop and integrate cutting edge technologies to stay ahead of market trends and deliver innovative solutions.</p>
+    <!-- Section 4: Vision and Mission -->
+    <section class="container py-5 vision-mission">
+      <div class="row text-center">
+        <div class="col-md-6">
+          <div class="circular">
+            <img src="assets\img\Vision.png" alt="Vision Icon">
           </div>
-          
-          <!-- End Card Item -->
-
-          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="200">
-            <span>02</span>
-            <h4>Customer Centricity</h4>
-            <p>Focus on understanding and meeting the unique needs of our clients, ensuring their success through tailored and impactful solutions.</p>
-          </div>
-          
-          <!-- End Card Item -->
-
-          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="300">
-            <span>03</span>
-            <h4> Operational Excellence</h4>
-            <p>Implement best practices and efficient processes to ensure high quality service delivery and customer satisfaction.</p>
-          </div>
-          
-          <!-- End Card Item -->
-
-          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="400">
-            <span>04</span>
-            <h4>Sustainable Growth</h4>
-            <p> Foster a cultureof continuous improvement and sustainability, driving long term growth and value for our stakeholders.</p>
-          </div>
-          
-          <!-- End Card Item -->
-
-          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="400">
-            <span>05</span>
-            <h4>Global Reach</h4>
-            <p> Expand our presence globally to servea diverse range of industries and markets, providing local expertise with a global perspective.</p>
-          </div>
-          <!-- End Card Item -->
-
-          <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="600">
-            <span>06</span>
-            <h4>Talent Development</h4>
-            <p>Invest in the growth and development of our team, ensuring we have the best talent to deliver exceptional results.</p>
-          </div>
-          
-          <!-- End Card Item -->
-
-    
-    <!-- /Cards Section -->
-  
-  
-  
-  
-  </div>
-  </section>
-
-  
-
-
-<!-- Section 6: Core Values with Descriptions -->
-<section class="container py-5">
-
-    <!-- Section Title -->
- <div class="container section-title" data-aos="fade-up">
-  <span>Core Values<br></span>
-  <h2>Core Values<br></h2>
-<section id="core-values" class="py-5">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 shadow">
-            <div class="card-body">
-              <h4 class="card-title">Innovation</h4>
-              <p class="card-text">We foster a culture of creativity and continuous improvement, driving forward-thinking solutions.</p>
-            </div>
-          </div>
+          <h2>Vision</h2>
+          <p>To emerge as a leading hub of knowledge-driven
+            innovation and a catalyst for digital transformation.</p>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 shadow">
-            <div class="card-body">
-              <h4 class="card-title">Excellence</h4>
-              <p class="card-text">We strive for the highest standards in all we do, ensuring top-quality outcomes for our clients.</p>
-            </div>
+        <div class="col-md-6">
+          <div class="circular">
+            <img src="assets\img\Mision.png" alt="Mission Icon">
           </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 shadow">
-            <div class="card-body">
-              <h4 class="card-title">Integrity</h4>
-              <p class="card-text">We conduct our business with honesty, transparency, and respect, building trust with our clients and partners.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 shadow">
-            <div class="card-body">
-              <h4 class="card-title">Collaboration</h4>
-              <p class="card-text">We believe in the power of teamwork, working closely with our clients and partners to achieve shared goals.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 shadow">
-            <div class="card-body">
-              <h4 class="card-title">Sustainability</h4>
-              <p class="card-text">We are committed to sustainable practices that benefit our clients, communities, and the environment.</p>
-            </div>
-          </div>
+          <h2>Mission</h2>
+          <p> To deliver cutting-edge digital and technological
+            services and solutions that empower our clients to
+            reach their full potential, driving innovation,
+            efficiency, and sustainable growth, by leveraging
+            the application of global methodologies and
+            industry-leading best practices.</p>
         </div>
       </div>
-    </div>
-  </section>
- 
-</section>
-  
+    </section>
 
- 
+
+    <!-- Section 3: Vious Strategic Direction -->
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <span>Strategic Objectives<br></span>
+      <h2>Strategic Objectives<br></h2>
+      <!-- <p>Our strategic direction, rooted in our vision, mission, and core values, guides us in delivering exceptional value to our clients and contributing to a sustainable future.</p> -->
+
+
+      <!-- End Section Title -->
+      <!-- Cards Section -->
+      <section id="cards" class="cards section">
+
+        <div class="container">
+
+          <div class="row no-gutters">
+
+            <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="100">
+              <span>01</span>
+              <h4>Innovation Leadership</h4>
+              <p>Continuously develop and integrate cutting edge technologies to stay ahead of market trends and deliver
+                innovative solutions.</p>
+            </div>
+
+            <!-- End Card Item -->
+
+            <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="200">
+              <span>02</span>
+              <h4>Customer Centricity</h4>
+              <p>Focus on understanding and meeting the unique needs of our clients, ensuring their success through
+                tailored and impactful solutions.</p>
+            </div>
+
+            <!-- End Card Item -->
+
+            <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="300">
+              <span>03</span>
+              <h4> Operational Excellence</h4>
+              <p>Implement best practices and efficient processes to ensure high quality service delivery and customer
+                satisfaction.</p>
+            </div>
+
+            <!-- End Card Item -->
+
+            <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="400">
+              <span>04</span>
+              <h4>Sustainable Growth</h4>
+              <p> Foster a cultureof continuous improvement and sustainability, driving long term growth and value for
+                our stakeholders.</p>
+            </div>
+
+            <!-- End Card Item -->
+
+            <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="400">
+              <span>05</span>
+              <h4>Global Reach</h4>
+              <p> Expand our presence globally to servea diverse range of industries and markets, providing local
+                expertise with a global perspective.</p>
+            </div>
+            <!-- End Card Item -->
+
+            <div class="col-lg-4 col-md-6 card" data-aos="fade-up" data-aos-delay="600">
+              <span>06</span>
+              <h4>Talent Development</h4>
+              <p>Invest in the growth and development of our team, ensuring we have the best talent to deliver
+                exceptional results.</p>
+            </div>
+
+            <!-- End Card Item -->
+
+
+            <!-- /Cards Section -->
+
+
+
+
+          </div>
+      </section>
+
+
+
+
+      <!-- Section 6: Core Values with Descriptions -->
+      <section class="container py-5">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <span>Core Values<br></span>
+          <h2>Core Values<br></h2>
+          <section id="core-values" class="py-5">
+            <div class="container">
+              <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                  <div class="card h-100 shadow">
+                    <div class="card-body">
+                      <h4 class="card-title">Innovation</h4>
+                      <p class="card-text">We foster a culture of creativity and continuous improvement, driving
+                        forward-thinking solutions.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card h-100 shadow">
+                    <div class="card-body">
+                      <h4 class="card-title">Excellence</h4>
+                      <p class="card-text">We strive for the highest standards in all we do, ensuring top-quality
+                        outcomes for our clients.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card h-100 shadow">
+                    <div class="card-body">
+                      <h4 class="card-title">Integrity</h4>
+                      <p class="card-text">We conduct our business with honesty, transparency, and respect, building
+                        trust with our clients and partners.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card h-100 shadow">
+                    <div class="card-body">
+                      <h4 class="card-title">Collaboration</h4>
+                      <p class="card-text">We believe in the power of teamwork, working closely with our clients and
+                        partners to achieve shared goals.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card h-100 shadow">
+                    <div class="card-body">
+                      <h4 class="card-title">Sustainability</h4>
+                      <p class="card-text">We are committed to sustainable practices that benefit our clients,
+                        communities, and the environment.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+      </section>
+
+
+
 
   </main>
 
@@ -438,11 +462,11 @@
           <div class="footer-about">
             <img src="assets/img/ViousWhite.png" alt="" id="footerLog">
 
-            <!-- <a href="index.html" class="logo sitename">VIOUS</a> -->
+            <!-- <a href="index.html" class="logo sitename">Vious</a> -->
             <div class="footer-contact pt-3">
               <p>Riyadh , Saudi Arabia</p>
               <p class="mt-3"><strong>Phone:</strong> <span>+966 509 711 777</span></p>
-              <p><strong>Email:</strong> <span>info@vious.com</span></p>
+              <p><strong>Email:</strong> <span><a href="mailto:info@vious.com">info@vious.com</a></span></p>
             </div>
             <div class="social-links d-flex mt-4">
               <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -453,48 +477,48 @@
           </div>
         </div>
 
-     <div class="col-lg-2 col-md-3 footer-links">
+        <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
             <li><a href="./index">Home</a></li>
             <li><a href="./Aboutus">Overview</a></li>
             <li><a href="./Experties">Expertise</a></li>
-            <li><a href="./terms-of-use">Terms of use</a></li>
-            <li><a href="./privacy-policy">Privacy policy</a></li>
+            <li><a href="./terms-of-use">Terms </a></li>
+            <li><a href="./privacy-policy">Privacy </a></li>
           </ul>
         </div>
 
-         <div class="col-lg-2 col-md-3 footer-links">
-              <h4>Our Expertise</h4>
-              <ul>
-                <li><a href="./digital-transformation">Digital Transformation</a></li>
-                <li><a href="./professionalConsulting">professional Consulting</a></li>
-                <li><a href="./AdvanceAnalyticsBigData">Analytics and Big Data</a></li>
-                <li><a href="./ArtificalIntelligenceAndML">Artificial Intelligence</a></li>
-                <li><a href="./IoT">Internt of Things</a></li>
-                <li><a href="./CloudComputing">Cloud Computing</a></li>
-               
-    
-              </ul>
-            </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Expertise</h4>
+          <ul>
+            <li><a href="./digital-transformation">Digital Transformation</a></li>
+            <li><a href="./professionalConsulting">professional Consulting</a></li>
+            <li><a href="./AdvanceAnalyticsBigData">Analytics and Big Data</a></li>
+            <li><a href="./ArtificalIntelligenceAndML">Artificial Intelligence</a></li>
+            <li><a href="./IoT">Internt of Things</a></li>
+            <li><a href="./CloudComputing">Cloud Computing</a></li>
 
 
-            <div class="col-lg-2 col-md-3 footer-links">
-              <h4><br>       </h4>
-              <ul>
-                
-                <li><a href="./Cypersecurity">Cyperscurity</a></li>
-                <li><a href="./Blockchain">Blockchain</a></li>
-                <li><a href="./SmartCities">Futuristic Cities</a></li>
-                <li><a href="./ARandVR">Augmented Reality<br> and Virtual Reality </br></a></li>
-                <li><a href="./RoboticsAndAutomation">Automation and Robotics</a></li>
-                <li><a href="./InnovationAndIdeation">Innovation and Ideation</a></li>
-    
-              </ul>
-            </div>
-    
+          </ul>
+        </div>
 
-        
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4><br> </h4>
+          <ul>
+
+            <li><a href="./Cypersecurity">Cyperscurity</a></li>
+            <li><a href="./Blockchain">Blockchain</a></li>
+            <li><a href="./SmartCities">Futuristic Cities</a></li>
+            <li><a href="./ARandVR">Augmented Reality<br> and Virtual Reality </br></a></li>
+            <li><a href="./RoboticsAndAutomation">Automation and Robotics</a></li>
+            <li><a href="./InnovationAndIdeation">Innovation and Ideation</a></li>
+
+          </ul>
+        </div>
+
+
+
 
       </div>
     </div>
@@ -502,14 +526,15 @@
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">VIOUS</strong> <span>All Rights Reserved</span> 2024</p>
       <div class="credits">
-       
+
       </div>
     </div>
 
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>

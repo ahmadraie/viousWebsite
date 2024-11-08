@@ -1,14 +1,14 @@
-
-
 /* Fonts */
 :root {
-  --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
+:root {
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #191919; /* Color for headings, subheadings and title throughout the website */
@@ -19,7 +19,7 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #ffffff;  /* The default color of the main navmenu links */
+  --nav-color: #ffffff; /* The default color of the main navmenu links */
   --nav-hover-color: #cc1616; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -68,7 +68,6 @@ a:hover {
 }
 
 h1,
-
 h3,
 h4,
 h5,
@@ -76,18 +75,18 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
-span{
+span {
   color: #ef0007;
 }
 
-h2{
+h2 {
   color: #ef0007;
   font-weight: 400;
 }
-h2 span{
+h2 span {
   color: #3d3d3d;
 }
-p{
+p {
   text-align: justify;
 }
 /* PHP Email Form Messages
@@ -176,7 +175,6 @@ p{
 }
 
 @media (max-width: 575px) {
-
   .header .topbar .contact-info i a,
   .header .topbar .contact-info i span {
     font-size: 13px;
@@ -242,12 +240,12 @@ p{
     list-style: none;
     align-items: center;
   }
-.navmenu span {
-  color: #3d3d3d;
-}
-.navmenu span:hover{
-  color: #f6f6f6;
-}
+  .navmenu span {
+    color: #3d3d3d;
+  }
+  .navmenu span:hover {
+    color: #f6f6f6;
+  }
   .navmenu li {
     position: relative;
   }
@@ -275,16 +273,14 @@ p{
     transition: 0.3s;
   }
 
-  
   .navmenu .active,
   .navmenu .active:focus {
     color: #3d3d3d;
     background-color: #ffffff50;
   }
-  .navmenu li:hover>a{
+  .navmenu li:hover > a {
     color: #ffffff;
     background-color: #ef0007;
-
   }
   .navmenu .dropdown ul {
     margin: 0;
@@ -319,12 +315,12 @@ p{
 
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover>a {
+  .navmenu .dropdown ul li:hover > a {
     color: #ffffff;
     background-color: var(--nav-hover-color);
   }
 
-  .navmenu .dropdown:hover>ul {
+  .navmenu .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -336,7 +332,7 @@ p{
     visibility: hidden;
   }
 
-  .navmenu .dropdown .dropdown:hover>ul {
+  .navmenu .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: -100%;
@@ -437,7 +433,7 @@ p{
     background-color: rgba(33, 37, 41, 0.1);
   }
 
-  .navmenu .dropdown>.dropdown-active {
+  .navmenu .dropdown > .dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
@@ -464,7 +460,7 @@ p{
     transition: 0.3s;
   }
 
-  .mobile-nav-active .navmenu>ul {
+  .mobile-nav-active .navmenu > ul {
     display: block;
   }
 }
@@ -497,7 +493,7 @@ p{
   }
 
   .navmenu .listing-dropdown ul li a,
-  .navmenu .listing-dropdown ul li:hover>a {
+  .navmenu .listing-dropdown ul li:hover > a {
     padding: 10px 20px;
     font-size: 15px;
     color: var(--nav-dropdown-color);
@@ -511,7 +507,7 @@ p{
     background-color: var(--nav-dropdown-background-color);
   }
 
-  .navmenu .listing-dropdown:hover>ul {
+  .navmenu .listing-dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -534,7 +530,7 @@ p{
     background-color: rgba(33, 37, 41, 0.1);
   }
 
-  .navmenu .listing-dropdown>.dropdown-active {
+  .navmenu .listing-dropdown > .dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
@@ -664,7 +660,7 @@ p{
   border-color: var(--accent-color);
 }
 
-.footer .footer-newsletter .newsletter-form input[type=email] {
+.footer .footer-newsletter .newsletter-form input[type="email"] {
   border: 0;
   padding: 4px;
   width: 100%;
@@ -672,11 +668,11 @@ p{
   color: var(--default-color);
 }
 
-.footer .footer-newsletter .newsletter-form input[type=email]:focus-visible {
+.footer .footer-newsletter .newsletter-form input[type="email"]:focus-visible {
   outline: none;
 }
 
-.footer .footer-newsletter .newsletter-form input[type=submit] {
+.footer .footer-newsletter .newsletter-form input[type="submit"] {
   border: 0;
   font-size: 16px;
   padding: 0 20px;
@@ -687,14 +683,15 @@ p{
   border-radius: 0;
 }
 
-.footer .footer-newsletter .newsletter-form input[type=submit]:hover {
+.footer .footer-newsletter .newsletter-form input[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
 .footer .copyright {
   padding-top: 25px;
   padding-bottom: 25px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .footer .copyright p {
@@ -807,11 +804,11 @@ p{
   font-size: 14px;
 }
 
-.page-title .breadcrumbs ol li+li {
+.page-title .breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.page-title .breadcrumbs ol li+li::before {
+.page-title .breadcrumbs ol li + li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -831,7 +828,6 @@ section,
 }
 
 @media (max-width: 1199px) {
-
   section,
   .section {
     scroll-margin-top: 66px;
@@ -875,6 +871,9 @@ section,
   margin-bottom: 0;
   position: relative;
   z-index: 2;
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
 }
 
 @media (max-width: 575px) {
@@ -885,6 +884,10 @@ section,
 
   .section-title span {
     font-size: 38px;
+  }
+  .section-title p {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 
@@ -925,7 +928,7 @@ section,
 }
 
 .hero h2 {
-  margin-top: 450px ;
+  margin-top: 450px;
   font-size: 64px;
   text-transform: uppercase;
   font-weight: 700;
@@ -934,7 +937,6 @@ section,
 
 .hero span {
   color: #ef0007;
-  
 }
 
 .hero p {
@@ -970,8 +972,7 @@ section,
   object-fit: cover;
   z-index: 1;
 }
-#changing-text{
-
+#changing-text {
   color: #ffffff;
 }
 
@@ -1021,7 +1022,6 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-
 
 /*--------------------------------------------------------------
 # Cards Section
@@ -1081,7 +1081,6 @@ section,
   padding: 0;
 }
 
-
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
@@ -1094,7 +1093,7 @@ section,
 }
 
 .clients .swiper-wrapper {
-  height: auto;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1107,9 +1106,10 @@ section,
 }
 
 .clients .swiper-slide img {
-  width: 150px; /* Increase logo size as needed */
+  width: 200px; /* Increase logo size as needed */
   height: 100%;
   transition: 0.3s;
+  max-width: fit-content;
 }
 
 .clients .swiper-slide img:hover {
@@ -1127,6 +1127,10 @@ section,
     text-align: center;
     margin-bottom: 20px;
   }
+  .clients .swiper-slide {
+    justify-content: center;
+    align-items: center;
+  }
 }
 /*--------------------------------------------------------------
 # Services Section
@@ -1138,12 +1142,12 @@ section,
   padding-bottom: 100%; /* Maintain a square shape */
   perspective: 1000px;
   border-color: #ef0007;
-border-radius: 50%;
-border: 5px  solid ;
+  border-radius: 50%;
+  border: 5px solid;
 }
 
 .flip-circle .circle-front,
-.flip-circle .circle-back  {
+.flip-circle .circle-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1165,7 +1169,8 @@ border: 5px  solid ;
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
-  filter: brightness(0.5);}
+  filter: brightness(0.5);
+}
 
 .flip-circle .circle-text {
   position: absolute;
@@ -1191,11 +1196,11 @@ border: 5px  solid ;
 .flip-circle .circle-back p {
   margin: 0;
   font-size: 1rem;
+  text-align: center;
 }
 
 .flip-circle:hover .circle-front {
   transform: rotateY(180deg);
-  
 }
 
 .flip-circle:hover .circle-back {
@@ -1208,15 +1213,13 @@ border: 5px  solid ;
   padding-bottom: 100%; /* Maintain a square shape */
   perspective: 1000px;
   border-color: #3d3d3d;
-border-radius: 50%;
-border: 5px groove;
+  border-radius: 50%;
+  border: 5px groove;
 }
 
-.circle-back a{
-
+.circle-back a {
   color: #f6f6f6;
 }
-
 
 /*--------------------------------------------------------------
 # Call To Action Section
@@ -1608,8 +1611,8 @@ border: 5px groove;
   }
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"],
 .contact .php-email-form textarea {
   font-size: 14px;
   padding: 10px 15px;
@@ -1620,19 +1623,19 @@ border: 5px groove;
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form input[type="text"]:focus,
+.contact .php-email-form input[type="email"]:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form input[type="text"]::placeholder,
+.contact .php-email-form input[type="email"]::placeholder,
 .contact .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   color: var(--contrast-color);
   background: var(--accent-color);
   border: 0;
@@ -1641,7 +1644,7 @@ border: 5px groove;
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
@@ -1653,22 +1656,18 @@ border: 5px groove;
   padding: 10px 30px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   margin-bottom: 20px;
- 
 }
 
 .services-list {
-
   position: sticky;
   top: 140px; /* Keeps the section sticky at 20px from the top of the viewport */
   height: fit-content;
 }
 
-
-
 @media (max-width: 768px) {
-.services-list {
+  .services-list {
     position: static;
-}
+  }
 }
 
 .service-details .services-list a {
@@ -1679,7 +1678,6 @@ border: 5px groove;
   margin: 20px 0;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   transition: 0.3s;
-  
 }
 
 .service-details .services-list a.active {
@@ -1740,14 +1738,20 @@ border: 5px groove;
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
   opacity: 1;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
 
@@ -1762,7 +1766,8 @@ border: 5px groove;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
 .portfolio-details .portfolio-info ul {
@@ -1771,7 +1776,7 @@ border: 5px groove;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -1793,16 +1798,10 @@ border: 5px groove;
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
 
 /*--------------------------------------------------------------
 # 
 --------------------------------------------------------------*/
-
-
-
 
 /* 
 Break Section
@@ -1839,27 +1838,26 @@ Break Section
   text-align: center;
   padding-right: 0%; /* Adjust the padding as needed */
   font-size: 40px;
-  
 }
 
-.btn{
+.btn {
   border: 3px solid;
-  border-color: #ef0007 ;
-border-radius: 50%;
-height: 40px;
-width: 40px;
-font-size: 10px;
-font-weight: bold;
-background-color: #ffffff;
-margin-left: 85%;
-color:#ef0007
+  border-color: #ef0007;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  font-size: 10px;
+  font-weight: bold;
+  background-color: #ffffff;
+  margin-left: 85%;
+  color: #ef0007;
 }
-.btn:hover{
-border-color: #3d3d3d;
+.btn:hover {
+  border-color: #3d3d3d;
   background-color: #3d3d3d;
   color: #ffffff;
 }
-.btn-outline-primary{
+.btn-outline-primary {
   height: 75px;
   width: 75px;
   font-size: 16px;
@@ -1874,7 +1872,6 @@ career
 */
 
 #apply {
-
   height: 100px;
   width: 100px;
   text-align: center;
@@ -1885,7 +1882,6 @@ career
 }
 
 #apply:hover {
-
   height: 100px;
   width: 100px;
   text-align: center;
@@ -1894,8 +1890,7 @@ career
   color: #ffffff;
 }
 
-#footerLog{
-
+#footerLog {
   height: 49px;
   width: 175px;
 }

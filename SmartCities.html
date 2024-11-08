@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,52 +29,58 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
- <style>
-   /* Section: Title with background cover */
-   .about-title {
-  background-image: url('assets/img/SamrtCitiesTitile.jpg'); /* Add your background image */
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: lightgray;
-  font-size: 48px;
-  font-weight: bold;
-  text-align: center;
-  position: relative; /* Enable positioning for the overlay */
-  overflow: hidden;
-}
-
-.about-title::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
-  z-index: 1; /* Ensure the overlay is behind the content */
-}
-
-.about-title h1 {
-  position: relative; /* Bring content above the overlay */
-  z-index: 2; /* Ensure the heading is above the overlay */
-  height: fit-content;
-  font-weight: bold;
-  color: #fff;
-  padding: 10px 20px; /* Optional: add padding for a better look */
-  text-align: center;
-}
-
-    .accordion-header{
-
-margin-top: 20px;
-
+  <style>
+    /* Section: Title with background cover */
+    .about-title {
+      background-image: url('assets/img/SamrtCitiesTitile.jpg');
+      /* Add your background image */
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: lightgray;
+      font-size: 48px;
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+      /* Enable positioning for the overlay */
+      overflow: hidden;
     }
 
- </style>
+    .about-title::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Black overlay with 50% opacity */
+      z-index: 1;
+      /* Ensure the overlay is behind the content */
+    }
+
+    .about-title h1 {
+      position: relative;
+      /* Bring content above the overlay */
+      z-index: 2;
+      /* Ensure the heading is above the overlay */
+      height: fit-content;
+      font-weight: bold;
+      color: #fff;
+      padding: 10px 20px;
+      /* Optional: add padding for a better look */
+      text-align: center;
+    }
+
+    .accordion-header {
+
+      margin-top: 20px;
+
+    }
+  </style>
 </head>
 
 <body class="service-details-page">
@@ -80,48 +88,48 @@ margin-top: 20px;
   <header id="header" class="header fixed-top">
 
     <div class="topbar d-flex align-items-center">
-     <div class="container d-flex justify-content-center justify-content-md-between">
-       <div class="contact-info d-flex align-items-center">
-         <!-- <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">Info@vious.com</a></i>
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <!-- <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">Info@vious.com</a></i>
          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+966 509 711 777</span></i> -->
-       </div>
-       <div class="social-links d-none d-md-flex align-items-center">
-         <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-       </div>
-     </div>
-   </div>
-   
-   <!-- End Top Bar -->
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
 
-   <div class="branding d-flex align-items-center">
+    <!-- End Top Bar -->
 
-     <div class="container position-relative d-flex align-items-center justify-content-between">
-       <a href="./index" class="logo d-flex align-items-center">
-         <!-- Uncomment the line below if you also wish to use an image logo -->
-         <!-- <img src="assets/img/logo.png" alt=""> -->
-         <img src="assets\img\viousBlack.png" alt="">
-       </a>
+    <div class="branding d-flex align-items-center">
 
-       <nav id="navmenu" class="navmenu">
-         <ul>
-          <li><a href="./index" class="active">Home</a></li>
-           <li><a href="./Aboutus">Overview</a></li>
-          <li><a href="./Experties">Expertise</a></li>
-           <li><a href="./Industries">Industries</a></li>
-           <li><a href="./partners">Partners</a></li>
-           <li><a href="./investors">Investors</a></li>
-           <li><a href="./insights">Insights</a></li>
-         </ul>
-         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-       </nav>
-     </div>
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="./index" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <img src="assets\img\viousBlack.png" alt="">
+        </a>
 
-   </div>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="./index" class="active">Home</a></li>
+            <li><a href="./Aboutus">Overview</a></li>
+            <li><a href="./Experties">Expertise</a></li>
+            <li><a href="./Industries">Industries</a></li>
+            <li><a href="./partners">Partners</a></li>
+            <li><a href="./investors">Investors</a></li>
+            <li><a href="./insights">Insights</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
 
- </header>
+    </div>
+
+  </header>
 
   <main class="main">
 
@@ -139,9 +147,9 @@ margin-top: 20px;
     </div><!-- End Page Title -->
 
     <!-- Section 1: Title with Background Cover -->
-  <section class="about-title">
-    <h1>Smart Cities</h1>
-  </section>
+    <section class="about-title">
+      <h1>Smart Cities</h1>
+    </section>
 
 
     <!-- Service Details Section -->
@@ -153,256 +161,301 @@ margin-top: 20px;
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="services-list">
-              <a href="./digital-transformation" >Digital Transformation </a>
+              <a href="./digital-transformation">Digital Transformation </a>
               <a href="./professionalConsulting">Professional Consulting </a>
-              <a href="./AdvanceAnalyticsBigData">Advanced Analytics and 
+              <a href="./AdvanceAnalyticsBigData">Advanced Analytics and
                 Big Data</a>
-              <a href="./ArtificalIntelligenceAndML">Artificial Intelligence 
+              <a href="./ArtificalIntelligenceAndML">Artificial Intelligence
                 and Machine Learning</a>
               <a href="./IoT">Internet of Things (IoT) </a>
               <a href="./CloudComputing">Cloud Computing </a>
               <a href="./Cypersecurity">Cybersecurity</a>
               <a href="./Blockchain">Blockchain </a>
               <a href="./SmartCities" class="active">Smart Cities</a>
-              <a href="./ARandVR">Augmented Reality 
+              <a href="./ARandVR">Augmented Reality
                 and Virtual Reality</a>
               <a href="./RoboticsAndAutomation">Robotics and Automation</a>
               <a href="./InnovationAndIdeation">Innovation and Ideation</a>
 
             </div>
 
-           
+
           </div>
 
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
             <img src="assets/img/SmartCitiesPage.png" alt="" class="img-fluid services-img">
             <h3>Smart Cities Solutions</h3>
             <p style="font-size: 20px;">
-              Developing intelligent 
-infrastructure and systems for 
-urban environments
+              Developing intelligent
+              infrastructure and systems for
+              urban environments
             </p>
 
             <div class="accordion" id="accordionPanelsStayOpenExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                  <button style="height: 100px; background-color: #ef0007; color:#ffffff; font-weight: bold;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                    Smart Infrastructure 
+                  <button style="height: 100px; background-color: #ef0007; color:#ffffff; font-weight: bold;"
+                    class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    Smart Infrastructure
                   </button>
                 </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse " aria-labelledby="panelsStayOpen-headingOne">
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse "
+                  aria-labelledby="panelsStayOpen-headingOne">
                   <div class="accordion-body">
-                    <p>  To develop and implement smart infrastructure solutions that
-                      improve urban living and sustainability.</p> 
-                      <h3><span>Intelligent Building Systems:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>   Implementing smart building technologies, such as automated lighting,
-                          HVAC systems, and energy management, to enhance efficiency and
-                          reduce costs.</li>
-                      </ul>
-                      <h3><span>Smart Grid Integration:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Developing smart grid systems to optimize electricity distribution,
-                          improve grid resilience, and enable renewable energy integration.</li>
-                      </ul>
-                      <h3><span>IoT-Enabled Infrastructure:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>   Deploying IoT sensors and devices to monitor and manage urban
-                          infrastructure, including roads, bridges, and public spaces.</li>
+                    <p> To develop and implement smart infrastructure solutions that
+                      improve urban living and sustainability.</p>
+                    <h3><span>Intelligent Building Systems:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Implementing smart
+                        building technologies, such as automated lighting,
+                        HVAC systems, and energy management, to enhance efficiency and
+                        reduce costs.</li>
+                    </ul>
+                    <h3><span>Smart Grid Integration:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Developing smart
+                        grid systems to optimize electricity distribution,
+                        improve grid resilience, and enable renewable energy integration.</li>
+                    </ul>
+                    <h3><span>IoT-Enabled Infrastructure:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Deploying IoT
+                        sensors and devices to monitor and manage urban
+                        infrastructure, including roads, bridges, and public spaces.</li>
 
-                      </ul>
-                      <h3><span>Sustainable Urban Planning:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>   Designing and implementing green infrastructure projects, such as
-                          parks and green roofs, to enhance urban sustainability and liveability.</li>
+                    </ul>
+                    <h3><span>Sustainable Urban Planning:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Designing and
+                        implementing green infrastructure projects, such as
+                        parks and green roofs, to enhance urban sustainability and liveability.</li>
 
-                      </ul>
-                      <h3><span>Data-Driven Urban Management:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>   Utilizing data analytics and AI to optimize the management of city
-                          resources and services.</li>
+                    </ul>
+                    <h3><span>Data-Driven Urban Management:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Utilizing data
+                        analytics and AI to optimize the management of city
+                        resources and services.</li>
 
-                      </ul>
-                    </div>
+                    </ul>
+                  </div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                  <button style=" height: 100px; background-color: #3d3d3d; color:#ffffff; font-weight: bold; " class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  <button style=" height: 100px; background-color: #3d3d3d; color:#ffffff; font-weight: bold; "
+                    class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
                     Smart Transportation
                   </button>
                 </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingTwo">
                   <div class="accordion-body">
 
                     <p> To provide solutions for intelligent transportation systems, traffic
-                      management, and mobility services.</p> 
-                      <h3><span> Traffic Management Systems:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>   Implementing real-time traffic monitoring and control systems to
-                          optimize traffic flow and reduce congestion.</li>
-                      </ul>
-                     
-                      <h3><span>Public Transit Solutions:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>   Enhancing public transportation services through smart ticketing, real
-                          time tracking, and dynamic scheduling.</li>
-                        
+                      management, and mobility services.</p>
+                    <h3><span> Traffic Management Systems:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Implementing
+                        real-time traffic monitoring and control systems to
+                        optimize traffic flow and reduce congestion.</li>
+                    </ul>
 
-                      </ul>
-                      <h3><span>Smart Parking:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>   Developing smart parking solutions, including automated payment and
-                          real-time availability updates, to improve parking efficiency.</li>
-                      </ul>
-                      <h3><span>Mobility-as-a-Service (MaaS):</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Integrating various transportation modes into a single service platform,
-                          offering users convenient access to multiple mobility options.</li>
-                      </ul>
-                      <h3><span>Electric and Autonomous Vehicles:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Supporting the deployment and management of electric and
-                          autonomous vehicles, including charging infrastructure and fleet
-                          management.</li>
-                      </ul>
+                    <h3><span>Public Transit Solutions:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Enhancing public
+                        transportation services through smart ticketing, real
+                        time tracking, and dynamic scheduling.</li>
+
+
+                    </ul>
+                    <h3><span>Smart Parking:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Developing smart
+                        parking solutions, including automated payment and
+                        real-time availability updates, to improve parking efficiency.</li>
+                    </ul>
+                    <h3><span>Mobility-as-a-Service (MaaS):</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Integrating various
+                        transportation modes into a single service platform,
+                        offering users convenient access to multiple mobility options.</li>
+                    </ul>
+                    <h3><span>Electric and Autonomous Vehicles:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Supporting the
+                        deployment and management of electric and
+                        autonomous vehicles, including charging infrastructure and fleet
+                        management.</li>
+                    </ul>
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                  <button style="height: 100px;  background-color: #ef0007; color:#ffffff; font-weight: bold; " class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  <button style="height: 100px;  background-color: #ef0007; color:#ffffff; font-weight: bold; "
+                    class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
                     Smart Governance
                   </button>
                 </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingThree">
                   <div class="accordion-body">
 
                     <p> To deploy digital solutions that enhance public services and citizen
-                      engagement.</p> 
-                      <h3><span>E-Government Platforms:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>   Developing online platforms for government services, enabling citizens
-                          to access services and information digitally. </li>
-                      </ul>
-                     
-                      <h3><span> Citizen Engagement Tools:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>     Implementing tools and platforms that facilitate communication and
-                          interaction between citizens and government, such as feedback portals
-                          and participatory budgeting.</li>
-                        
+                      engagement.</p>
+                    <h3><span>E-Government Platforms:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Developing online
+                        platforms for government services, enabling citizens
+                        to access services and information digitally. </li>
+                    </ul>
 
-                      </ul>
-                      <h3><span>Digital Identity Solutions:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>   Providing secure digital identity solutions for accessing government
-                          services and conducting transactions.</li>
-                      </ul>
-                      <h3><span>Data Transparency and Open Data:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>   Promoting data transparency by making public data accessible and
-                          usable, fostering innovation and accountability.</li>
-                      </ul>
-                      <h3><span> Smart City Dashboards:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>   Creating dashboards that provide real-time information on city services,
-                          resources, and key performance indicators.</li>
-                      </ul>
+                    <h3><span> Citizen Engagement Tools:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Implementing tools
+                        and platforms that facilitate communication and
+                        interaction between citizens and government, such as feedback portals
+                        and participatory budgeting.</li>
+
+
+                    </ul>
+                    <h3><span>Digital Identity Solutions:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Providing secure
+                        digital identity solutions for accessing government
+                        services and conducting transactions.</li>
+                    </ul>
+                    <h3><span>Data Transparency and Open Data:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Promoting data
+                        transparency by making public data accessible and
+                        usable, fostering innovation and accountability.</li>
+                    </ul>
+                    <h3><span> Smart City Dashboards:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Creating dashboards
+                        that provide real-time information on city services,
+                        resources, and key performance indicators.</li>
+                    </ul>
 
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                  <button style=" height: 100px; background-color: #3d3d3d; color:#ffffff; font-weight: bold; " class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                  <button style=" height: 100px; background-color: #3d3d3d; color:#ffffff; font-weight: bold; "
+                    class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseFour">
                     Smart Utilities
                   </button>
                 </h2>
-                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingFour">
                   <div class="accordion-body">
 
                     <p>To deploy smart solutions for energy, water, and waste
-                      management.</p> 
-                      <h3><span>Smart Metering:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>   Implementing smart meters for electricity, gas, and water to enable
-                          accurate billing, usage monitoring, and demand management.</li>
-                      </ul>
-                     
-                      <h3><span>Energy Management Systems:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>   Developing systems for optimizing energy consumption and integrating
-                          renewable energy sources.</li>
-                        
+                      management.</p>
+                    <h3><span>Smart Metering:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Implementing smart
+                        meters for electricity, gas, and water to enable
+                        accurate billing, usage monitoring, and demand management.</li>
+                    </ul>
 
-                      </ul>
-                      <h3><span>Water Management Solutions:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Utilizing smart technologies for water distribution, leak detection, and
-                          quality monitoring.</li>
-                      </ul>
-                      <h3><span>Waste Management Systems:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Implementing smart waste management solutions, including sensor
-                          equipped bins and route optimization for waste collection.</li>
-                      </ul>
-                      <h3><span> Resource Conservation:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Promoting the efficient use of natural resources through data-driven
-                          decision-making and public awareness campaigns.</li>
-                      </ul>
+                    <h3><span>Energy Management Systems:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Developing systems
+                        for optimizing energy consumption and integrating
+                        renewable energy sources.</li>
+
+
+                    </ul>
+                    <h3><span>Water Management Solutions:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Utilizing smart
+                        technologies for water distribution, leak detection, and
+                        quality monitoring.</li>
+                    </ul>
+                    <h3><span>Waste Management Systems:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Implementing smart
+                        waste management solutions, including sensor
+                        equipped bins and route optimization for waste collection.</li>
+                    </ul>
+                    <h3><span> Resource Conservation:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Promoting the
+                        efficient use of natural resources through data-driven
+                        decision-making and public awareness campaigns.</li>
+                    </ul>
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingFive">
-                  <button style="height: 100px;  background-color: #ef0007; color:#ffffff; font-weight: bold; " class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                  <button style="height: 100px;  background-color: #ef0007; color:#ffffff; font-weight: bold; "
+                    class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseFive">
                     Public Safety and Security
                   </button>
                 </h2>
-                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingFive">
                   <div class="accordion-body">
 
                     <p> To enhance public safety through advanced surveillance and
-                      emergency response systems.</p> 
-                      <h3><span> Surveillance and Monitoring:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>   Deploying advanced surveillance systems with AI-based analytics for
-                          real-time threat detection and response.</li>
-                      </ul>
-                     
-                      <h3><span>Emergency Response Systems:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>   Implementing integrated communication and coordination systems for
-                          emergency response teams.</li>
-                        
+                      emergency response systems.</p>
+                    <h3><span> Surveillance and Monitoring:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Deploying advanced
+                        surveillance systems with AI-based analytics for
+                        real-time threat detection and response.</li>
+                    </ul>
 
-                      </ul>
-                      <h3><span>Public Safety Analytics:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>   Analyzing data from various sources, such as social media and IoT
-                          devices, to predict and respond to safety incidents.</li>
-                      </ul>
-                      <h3><span>Smart Lighting:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Installing smart street lighting that adjusts brightness based on
-                          pedestrian and vehicular traffic, enhancing safety and energy efficiency.</li>
-                      </ul>
-                      <h3><span>Disaster Management Systems:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>   Developing systems for monitoring and responding to natural disasters
-                          and other emergencies, including early warning systems and
-                          evacuation planning.</li>
-                      </ul>
+                    <h3><span>Emergency Response Systems:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Implementing
+                        integrated communication and coordination systems for
+                        emergency response teams.</li>
+
+
+                    </ul>
+                    <h3><span>Public Safety Analytics:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Analyzing data from
+                        various sources, such as social media and IoT
+                        devices, to predict and respond to safety incidents.</li>
+                    </ul>
+                    <h3><span>Smart Lighting:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Installing smart
+                        street lighting that adjusts brightness based on
+                        pedestrian and vehicular traffic, enhancing safety and energy efficiency.</li>
+                    </ul>
+                    <h3><span>Disaster Management Systems:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Developing systems
+                        for monitoring and responding to natural disasters
+                        and other emergencies, including early warning systems and
+                        evacuation planning.</li>
+                    </ul>
 
                   </div>
                 </div>
               </div>
             </div>
-<P>
+            <P>
 
-</P>
+            </P>
             <p style="font-size: 20px;">
               These smart city solutions leverage advanced technologies to
               create more efficient, sustainable, and liveable urban environments,
@@ -432,7 +485,7 @@ urban environments
             <div class="footer-contact pt-3">
               <p>Riyadh , Saudi Arabia</p>
               <p class="mt-3"><strong>Phone:</strong> <span>+966 509 711 777</span></p>
-              <p><strong>Email:</strong> <span>info@vious.com</span></p>
+              <p><strong>Email:</strong> <span><a href="mailto:info@vious.com">info@vious.com</a></span></p>
             </div>
             <div class="social-links d-flex mt-4">
               <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -443,48 +496,48 @@ urban environments
           </div>
         </div>
 
-     <div class="col-lg-2 col-md-3 footer-links">
+        <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
             <li><a href="./index">Home</a></li>
             <li><a href="./Aboutus">Overview</a></li>
             <li><a href="./Experties">Expertise</a></li>
-            <li><a href="./terms-of-use">Terms of use</a></li>
-            <li><a href="./privacy-policy">Privacy policy</a></li>
+            <li><a href="./terms-of-use">Terms </a></li>
+            <li><a href="./privacy-policy">Privacy </a></li>
           </ul>
         </div>
 
-         <div class="col-lg-2 col-md-3 footer-links">
-              <h4>Our Expertise</h4>
-              <ul>
-                <li><a href="./digital-transformation">Digital Transformation</a></li>
-                <li><a href="./professionalConsulting">professional Consulting</a></li>
-                <li><a href="./AdvanceAnalyticsBigData">Analytics and Big Data</a></li>
-                <li><a href="./ArtificalIntelligenceAndML">Artificial Intelligence</a></li>
-                <li><a href="./IoT">Internt of Things</a></li>
-                <li><a href="./CloudComputing">Cloud Computing</a></li>
-               
-    
-              </ul>
-            </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Expertise</h4>
+          <ul>
+            <li><a href="./digital-transformation">Digital Transformation</a></li>
+            <li><a href="./professionalConsulting">professional Consulting</a></li>
+            <li><a href="./AdvanceAnalyticsBigData">Analytics and Big Data</a></li>
+            <li><a href="./ArtificalIntelligenceAndML">Artificial Intelligence</a></li>
+            <li><a href="./IoT">Internt of Things</a></li>
+            <li><a href="./CloudComputing">Cloud Computing</a></li>
 
 
-            <div class="col-lg-2 col-md-3 footer-links">
-              <h4><br>       </h4>
-              <ul>
-                
-                <li><a href="./Cypersecurity">Cyperscurity</a></li>
-                <li><a href="./Blockchain">Blockchain</a></li>
-                <li><a href="./SmartCities">Futuristic Cities</a></li>
-                <li><a href="./ARandVR">Augmented Reality<br> and Virtual Reality </br></a></li>
-                <li><a href="./RoboticsAndAutomation">Automation and Robotics</a></li>
-                <li><a href="./InnovationAndIdeation">Innovation and Ideation</a></li>
-    
-              </ul>
-            </div>
-    
+          </ul>
+        </div>
 
-        
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4><br> </h4>
+          <ul>
+
+            <li><a href="./Cypersecurity">Cyperscurity</a></li>
+            <li><a href="./Blockchain">Blockchain</a></li>
+            <li><a href="./SmartCities">Futuristic Cities</a></li>
+            <li><a href="./ARandVR">Augmented Reality<br> and Virtual Reality </br></a></li>
+            <li><a href="./RoboticsAndAutomation">Automation and Robotics</a></li>
+            <li><a href="./InnovationAndIdeation">Innovation and Ideation</a></li>
+
+          </ul>
+        </div>
+
+
+
 
       </div>
     </div>
@@ -492,14 +545,15 @@ urban environments
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">VIOUS</strong> <span>All Rights Reserved</span> 2024</p>
       <div class="credits">
-       
+
       </div>
     </div>
 
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>

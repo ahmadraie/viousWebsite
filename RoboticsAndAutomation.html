@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,51 +29,58 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
- <style>
-   /* Section: Title with background cover */
-   .about-title {
-  background-image: url('assets/img/RoboticsTitle.jpg'); /* Add your background image */
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: lightgray;
-  font-size: 48px;
-  font-weight: bold;
-  text-align: center;
-  position: relative; /* Enable positioning for the overlay */
-  overflow: hidden;
-}
+  <style>
+    /* Section: Title with background cover */
+    .about-title {
+      background-image: url('assets/img/RoboticsTitle.jpg');
+      /* Add your background image */
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: lightgray;
+      font-size: 48px;
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+      /* Enable positioning for the overlay */
+      overflow: hidden;
+    }
 
-.about-title::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
-  z-index: 1; /* Ensure the overlay is behind the content */
-}
+    .about-title::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Black overlay with 50% opacity */
+      z-index: 1;
+      /* Ensure the overlay is behind the content */
+    }
 
-.about-title h1 {
-  position: relative; /* Bring content above the overlay */
-  z-index: 2; /* Ensure the heading is above the overlay */
-  height: fit-content;
-  font-weight: bold;
-  color: #fff;
-  padding: 10px 20px; /* Optional: add padding for a better look */
-  text-align: center;
-}
+    .about-title h1 {
+      position: relative;
+      /* Bring content above the overlay */
+      z-index: 2;
+      /* Ensure the heading is above the overlay */
+      height: fit-content;
+      font-weight: bold;
+      color: #fff;
+      padding: 10px 20px;
+      /* Optional: add padding for a better look */
+      text-align: center;
+    }
 
-    .accordion-header{
+    .accordion-header {
 
-margin-top: 20px;
+      margin-top: 20px;
 
     }
- </style>
+  </style>
 </head>
 
 <body class="service-details-page">
@@ -79,48 +88,48 @@ margin-top: 20px;
   <header id="header" class="header fixed-top">
 
     <div class="topbar d-flex align-items-center">
-     <div class="container d-flex justify-content-center justify-content-md-between">
-       <div class="contact-info d-flex align-items-center">
-         <!-- <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">Info@vious.com</a></i>
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <!-- <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">Info@vious.com</a></i>
          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+966 509 711 777</span></i> -->
-       </div>
-       <div class="social-links d-none d-md-flex align-items-center">
-         <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-       </div>
-     </div>
-   </div>
-   
-   <!-- End Top Bar -->
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
 
-   <div class="branding d-flex align-items-center">
+    <!-- End Top Bar -->
 
-     <div class="container position-relative d-flex align-items-center justify-content-between">
-       <a href="./index" class="logo d-flex align-items-center">
-         <!-- Uncomment the line below if you also wish to use an image logo -->
-         <!-- <img src="assets/img/logo.png" alt=""> -->
-         <img src="assets\img\viousBlack.png" alt="">
-       </a>
+    <div class="branding d-flex align-items-center">
 
-       <nav id="navmenu" class="navmenu">
-         <ul>
-          <li><a href="./index" class="active">Home</a></li>
-           <li><a href="./Aboutus">Overview</a></li>
-          <li><a href="./Experties">Expertise</a></li>
-           <li><a href="./Industries">Industries</a></li>
-           <li><a href="./partners">Partners</a></li>
-           <li><a href="./investors">Investors</a></li>
-           <li><a href="./insights">Insights</a></li>
-         </ul>
-         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-       </nav>
-     </div>
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="./index" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <img src="assets\img\viousBlack.png" alt="">
+        </a>
 
-   </div>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="./index" class="active">Home</a></li>
+            <li><a href="./Aboutus">Overview</a></li>
+            <li><a href="./Experties">Expertise</a></li>
+            <li><a href="./Industries">Industries</a></li>
+            <li><a href="./partners">Partners</a></li>
+            <li><a href="./investors">Investors</a></li>
+            <li><a href="./insights">Insights</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
 
- </header>
+    </div>
+
+  </header>
 
   <main class="main">
 
@@ -138,9 +147,9 @@ margin-top: 20px;
     </div><!-- End Page Title -->
 
     <!-- Section 1: Title with Background Cover -->
-  <section class="about-title">
-    <h1>Robotics and Automation</h1>
-  </section>
+    <section class="about-title">
+      <h1>Robotics and Automation</h1>
+    </section>
 
 
     <!-- Service Details Section -->
@@ -152,225 +161,261 @@ margin-top: 20px;
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="services-list">
-              <a href="./digital-transformation" >Digital Transformation </a>
+              <a href="./digital-transformation">Digital Transformation </a>
               <a href="./professionalConsulting">Professional Consulting </a>
-              <a href="./AdvanceAnalyticsBigData">Advanced Analytics and 
+              <a href="./AdvanceAnalyticsBigData">Advanced Analytics and
                 Big Data</a>
-              <a href="./ArtificalIntelligenceAndML">Artificial Intelligence 
+              <a href="./ArtificalIntelligenceAndML">Artificial Intelligence
                 and Machine Learning</a>
               <a href="./IoT">Internet of Things (IoT) </a>
               <a href="./CloudComputing">Cloud Computing </a>
               <a href="./Cypersecurity">Cybersecurity</a>
               <a href="./Blockchain">Blockchain </a>
               <a href="./SmartCities">Smart Cities</a>
-              <a href="./ARandVR">Augmented Reality 
+              <a href="./ARandVR">Augmented Reality
                 and Virtual Reality</a>
               <a href="./RoboticsAndAutomation" class="active">Robotics and Automation</a>
               <a href="./InnovationAndIdeation">Innovation and Ideation</a>
 
             </div>
 
-           
+
           </div>
 
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
             <img src="assets/img/RoboticsPage.png" alt="" class="img-fluid services-img">
             <h3>Robotics and Automation</h3>
             <p style="font-size: 20px;">
-              Automating repetitive tasks and 
-enhancing productivity with robotics.
+              Automating repetitive tasks and
+              enhancing productivity with robotics.
             </p>
 
             <div class="accordion" id="accordionPanelsStayOpenExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                  <button style="height: 100px; background-color: #ef0007; color:#ffffff; font-weight: bold;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                    Robotic Process Automation (RPA) 
+                  <button style="height: 100px; background-color: #ef0007; color:#ffffff; font-weight: bold;"
+                    class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    Robotic Process Automation (RPA)
                   </button>
                 </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse " aria-labelledby="panelsStayOpen-headingOne">
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse "
+                  aria-labelledby="panelsStayOpen-headingOne">
                   <div class="accordion-body">
                     <p>To automate repetitive tasks, thereby increasing efficiency and
-                      reducing human errors.</p> 
-                      <h3><span>Process Identification and Mapping:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>   Identifying processes suitable for automation and mapping them to
-                          understand the workflow. </li>
-                        
-                      </ul>
-                      <h3><span> RPA Solution Development:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>     Designing and developing RPA solutions tailored to specific business
-                          processes,using tools like UiPath,and Automation Anywhere.</li>
-                      </ul>
-                      <h3><span> Bot Deployment and Management:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Deploying software bots to automate tasks such as data entry,
-                          transaction processing, and report generation.</li>
+                      reducing human errors.</p>
+                    <h3><span>Process Identification and Mapping:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Identifying
+                        processes suitable for automation and mapping them to
+                        understand the workflow. </li>
 
-                      </ul>
-                      <h3><span> Monitoring and Optimization:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Continuously monitoring the performance of RPA bots and optimizing
-                          them for efficiency and accuracy.</li>
+                    </ul>
+                    <h3><span> RPA Solution Development:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Designing and
+                        developing RPA solutions tailored to specific business
+                        processes,using tools like UiPath,and Automation Anywhere.</li>
+                    </ul>
+                    <h3><span> Bot Deployment and Management:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Deploying software
+                        bots to automate tasks such as data entry,
+                        transaction processing, and report generation.</li>
 
-                      </ul>
-                      <h3><span> Scalability and Integration:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>     Scaling RPA solutions across departments and integrating them with
-                          existing IT systems and applications.</li>
+                    </ul>
+                    <h3><span> Monitoring and Optimization:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Continuously
+                        monitoring the performance of RPA bots and optimizing
+                        them for efficiency and accuracy.</li>
 
-                      </ul>
-                    </div>
+                    </ul>
+                    <h3><span> Scalability and Integration:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Scaling RPA
+                        solutions across departments and integrating them with
+                        existing IT systems and applications.</li>
+
+                    </ul>
+                  </div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                  <button style=" height: 100px; background-color: #3d3d3d; color:#ffffff; font-weight: bold; " class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  <button style=" height: 100px; background-color: #3d3d3d; color:#ffffff; font-weight: bold; "
+                    class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
                     Industrial Automation
                   </button>
                 </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingTwo">
                   <div class="accordion-body">
 
                     <p> To implement automation solutions in manufacturing and other
-                      industrial settings, improving production efficiency and quality.</p> 
-                      <h3><span>Automated Manufacturing Systems:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Developing and deploying automated systems for tasks such as
-                          assembly, packaging, and quality control. </li>
-                      </ul>
-                     
-                      <h3><span>Programmable Logic Controllers (PLCs):</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>   Implementing PLCs for the control of machinery and industrial
-                          processes.</li>
-                        
+                      industrial settings, improving production efficiency and quality.</p>
+                    <h3><span>Automated Manufacturing Systems:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Developing and
+                        deploying automated systems for tasks such as
+                        assembly, packaging, and quality control. </li>
+                    </ul>
 
-                      </ul>
-                      <h3><span>Industrial Robotics:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Integrating robotic arms and automated guided vehicles (AGVs) into
-                          manufacturing lines for tasks like welding, painting, and material
-                          handling.</li>
-                      </ul>
-                      <h3><span>Control Systems and SCADA:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Implementing Supervisory Control and Data Acquisition (SCADA)
-                          systems for real-time monitoring and control of industrial processes.</li>
-                      </ul>
-                      <h3><span>Predictive Maintenance</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Using sensors and IoT technologies to monitor equipment health and
-                          predict maintenance needs, reducing downtime.</li>
-                      </ul>
+                    <h3><span>Programmable Logic Controllers (PLCs):</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Implementing PLCs
+                        for the control of machinery and industrial
+                        processes.</li>
+
+
+                    </ul>
+                    <h3><span>Industrial Robotics:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Integrating robotic
+                        arms and automated guided vehicles (AGVs) into
+                        manufacturing lines for tasks like welding, painting, and material
+                        handling.</li>
+                    </ul>
+                    <h3><span>Control Systems and SCADA:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Implementing
+                        Supervisory Control and Data Acquisition (SCADA)
+                        systems for real-time monitoring and control of industrial processes.</li>
+                    </ul>
+                    <h3><span>Predictive Maintenance</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Using sensors and
+                        IoT technologies to monitor equipment health and
+                        predict maintenance needs, reducing downtime.</li>
+                    </ul>
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                  <button style="height: 100px;  background-color: #ef0007; color:#ffffff; font-weight: bold; " class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  <button style="height: 100px;  background-color: #ef0007; color:#ffffff; font-weight: bold; "
+                    class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
                     Service Robots
                   </button>
                 </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingThree">
                   <div class="accordion-body">
 
                     <p>To develop robots for customer service, healthcare, and other
-                      service industries.</p> 
-                      <h3><span>  Customer Service Robots:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Creating robots that assist customers in retail, hospitality, and other
-                          sectors, providing information and services.</li>
-                     
-                        
-                      </ul>
-                     
-                      <h3><span>Healthcare Robots:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>     Developing robots for tasks like patient monitoring, assistance in
-                          surgeries, and delivery of medications in healthcare settings.</li>
-                        
-                        
+                      service industries.</p>
+                    <h3><span> Customer Service Robots:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Creating robots
+                        that assist customers in retail, hospitality, and other
+                        sectors, providing information and services.</li>
 
-                      </ul>
-                      <h3><span>  Robots for Elderly Care:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Designing robots that support elderly individuals with daily activities
-                          and provide companionship.</li>
-                        
-                      </ul>
-                      <h3><span> Educational Robots:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Creating robots for educational purposes, aiding in teaching and
-                          interactive learning experiences.</li>
-                       
-                        
-                      </ul>
-                      <h3><span>  Robotics in Public Spaces:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Deploying robots for tasks such as cleaning, security, and public
-                          information dissemination in public spaces like airports and shopping
-                          malls.</li>
-                       
-                        
-                      </ul>
+
+                    </ul>
+
+                    <h3><span>Healthcare Robots:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Developing robots
+                        for tasks like patient monitoring, assistance in
+                        surgeries, and delivery of medications in healthcare settings.</li>
+
+
+
+                    </ul>
+                    <h3><span> Robots for Elderly Care:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Designing robots
+                        that support elderly individuals with daily activities
+                        and provide companionship.</li>
+
+                    </ul>
+                    <h3><span> Educational Robots:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Creating robots for
+                        educational purposes, aiding in teaching and
+                        interactive learning experiences.</li>
+
+
+                    </ul>
+                    <h3><span> Robotics in Public Spaces:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Deploying robots
+                        for tasks such as cleaning, security, and public
+                        information dissemination in public spaces like airports and shopping
+                        malls.</li>
+
+
+                    </ul>
                   </div>
                 </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                      <button style="height: 100px; background-color: #3d3d3d; color:#ffffff; font-weight: bold;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                        Automation Consulting 
-                      </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse " aria-labelledby="panelsStayOpen-headingFour">
-                      <div class="accordion-body">
-                        <p> To provide expertise on the best automation strategies and
-                          technologies for specific business needs.</p> 
-                          <h3><span>Automation Strategy Development:</span></h3>
-                          <ul>
-                            <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Crafting a comprehensive automation strategy that aligns with business
-                              goals and objectives. </li>
-                          </ul>
-                          <h3><span>Technology Assessment and Selection:</span></h3>
-                          <ul>
-                            <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Evaluating and recommending the most suitable automation
-                              technologies and vendors.</li>
-                          
-                          </ul>
-                          <h3><span>Feasibility Studies:</span></h3>
-                          <ul>
-                            <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Conducting feasibility studies to assess the potential benefits and ROI
-                              of automation initiatives.</li>
-                            
-    
-                          </ul>
-                          <h3><span>Change Management and Training:</span></h3>
-                          <ul>
-                            <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Managing organizational change and providing training to employees
-                              on new automation technologies and processes.</li>
-                            
-    
-                          </ul>
-                          <h3><span>  Implementation Support:</span></h3>
-                          <ul>
-                            <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>   Offering end-to-end support during the implementation of automation
-                              solutions, including project management and technical support.</li>
-                            
-    
-                          </ul>
-                        </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                    <button style="height: 100px; background-color: #3d3d3d; color:#ffffff; font-weight: bold;"
+                      class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseFour">
+                      Automation Consulting
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse "
+                    aria-labelledby="panelsStayOpen-headingFour">
+                    <div class="accordion-body">
+                      <p> To provide expertise on the best automation strategies and
+                        technologies for specific business needs.</p>
+                      <h3><span>Automation Strategy Development:</span></h3>
+                      <ul>
+                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Crafting a
+                          comprehensive automation strategy that aligns with business
+                          goals and objectives. </li>
+                      </ul>
+                      <h3><span>Technology Assessment and Selection:</span></h3>
+                      <ul>
+                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Evaluating and
+                          recommending the most suitable automation
+                          technologies and vendors.</li>
+
+                      </ul>
+                      <h3><span>Feasibility Studies:</span></h3>
+                      <ul>
+                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Conducting
+                          feasibility studies to assess the potential benefits and ROI
+                          of automation initiatives.</li>
+
+
+                      </ul>
+                      <h3><span>Change Management and Training:</span></h3>
+                      <ul>
+                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Managing
+                          organizational change and providing training to employees
+                          on new automation technologies and processes.</li>
+
+
+                      </ul>
+                      <h3><span> Implementation Support:</span></h3>
+                      <ul>
+                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Offering
+                          end-to-end support during the implementation of automation
+                          solutions, including project management and technical support.</li>
+
+
+                      </ul>
                     </div>
                   </div>
+                </div>
 
-                
+
               </div>
             </div>
-<P>
+            <P>
 
-</P>
+            </P>
             <p style="font-size: 20px;">
-             </p>
+            </p>
           </div>
 
         </div>
@@ -393,7 +438,7 @@ enhancing productivity with robotics.
             <div class="footer-contact pt-3">
               <p>Riyadh , Saudi Arabia</p>
               <p class="mt-3"><strong>Phone:</strong> <span>+966 509 711 777</span></p>
-              <p><strong>Email:</strong> <span>info@vious.com</span></p>
+              <p><strong>Email:</strong> <span><a href="mailto:info@vious.com">info@vious.com</a></span></p>
             </div>
             <div class="social-links d-flex mt-4">
               <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -404,48 +449,48 @@ enhancing productivity with robotics.
           </div>
         </div>
 
-     <div class="col-lg-2 col-md-3 footer-links">
+        <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
             <li><a href="./index">Home</a></li>
             <li><a href="./Aboutus">Overview</a></li>
             <li><a href="./Experties">Expertise</a></li>
-            <li><a href="./terms-of-use">Terms of use</a></li>
-            <li><a href="./privacy-policy">Privacy policy</a></li>
+            <li><a href="./terms-of-use">Terms </a></li>
+            <li><a href="./privacy-policy">Privacy </a></li>
           </ul>
         </div>
 
-         <div class="col-lg-2 col-md-3 footer-links">
-              <h4>Our Expertise</h4>
-              <ul>
-                <li><a href="./digital-transformation">Digital Transformation</a></li>
-                <li><a href="./professionalConsulting">professional Consulting</a></li>
-                <li><a href="./AdvanceAnalyticsBigData">Analytics and Big Data</a></li>
-                <li><a href="./ArtificalIntelligenceAndML">Artificial Intelligence</a></li>
-                <li><a href="./IoT">Internt of Things</a></li>
-                <li><a href="./CloudComputing">Cloud Computing</a></li>
-               
-    
-              </ul>
-            </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Expertise</h4>
+          <ul>
+            <li><a href="./digital-transformation">Digital Transformation</a></li>
+            <li><a href="./professionalConsulting">professional Consulting</a></li>
+            <li><a href="./AdvanceAnalyticsBigData">Analytics and Big Data</a></li>
+            <li><a href="./ArtificalIntelligenceAndML">Artificial Intelligence</a></li>
+            <li><a href="./IoT">Internt of Things</a></li>
+            <li><a href="./CloudComputing">Cloud Computing</a></li>
 
 
-            <div class="col-lg-2 col-md-3 footer-links">
-              <h4><br>       </h4>
-              <ul>
-                
-                <li><a href="./Cypersecurity">Cyperscurity</a></li>
-                <li><a href="./Blockchain">Blockchain</a></li>
-                <li><a href="./SmartCities">Futuristic Cities</a></li>
-                <li><a href="./ARandVR">Augmented Reality<br> and Virtual Reality </br></a></li>
-                <li><a href="./RoboticsAndAutomation">Automation and Robotics</a></li>
-                <li><a href="./InnovationAndIdeation">Innovation and Ideation</a></li>
-    
-              </ul>
-            </div>
-    
+          </ul>
+        </div>
 
-        
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4><br> </h4>
+          <ul>
+
+            <li><a href="./Cypersecurity">Cyperscurity</a></li>
+            <li><a href="./Blockchain">Blockchain</a></li>
+            <li><a href="./SmartCities">Futuristic Cities</a></li>
+            <li><a href="./ARandVR">Augmented Reality<br> and Virtual Reality </br></a></li>
+            <li><a href="./RoboticsAndAutomation">Automation and Robotics</a></li>
+            <li><a href="./InnovationAndIdeation">Innovation and Ideation</a></li>
+
+          </ul>
+        </div>
+
+
+
 
       </div>
     </div>
@@ -453,14 +498,15 @@ enhancing productivity with robotics.
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">VIOUS</strong> <span>All Rights Reserved</span> 2024</p>
       <div class="credits">
-       
+
       </div>
     </div>
 
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>

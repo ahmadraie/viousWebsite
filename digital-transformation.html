@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,56 +29,58 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
- <style>
-   /* Section: Title with background cover */
-   .about-title {
-  background-image: url('assets/img/DigitalTransformationPage.jpg'); /* Add your background image */
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: lightgray;
-  font-size: 48px;
-  font-weight: bold;
-  text-align: center;
-  position: relative; /* Enable positioning for the overlay */
-  overflow: hidden;
-}
-
-.about-title::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
-  z-index: 1; /* Ensure the overlay is behind the content */
-}
-
-.about-title h1 {
-  position: relative; /* Bring content above the overlay */
-  z-index: 2; /* Ensure the heading is above the overlay */
-  height: fit-content;
-  font-weight: bold;
-  color: #fff;
-  padding: 10px 20px; /* Optional: add padding for a better look */
-  text-align: center;
-}
-
-    .accordion-header{
-
-margin-top: 20px;
-
+  <style>
+    /* Section: Title with background cover */
+    .about-title {
+      background-image: url('assets/img/DigitalTransformationPage.jpg');
+      /* Add your background image */
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: lightgray;
+      font-size: 48px;
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+      /* Enable positioning for the overlay */
+      overflow: hidden;
     }
 
+    .about-title::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Black overlay with 50% opacity */
+      z-index: 1;
+      /* Ensure the overlay is behind the content */
+    }
 
-   
+    .about-title h1 {
+      position: relative;
+      /* Bring content above the overlay */
+      z-index: 2;
+      /* Ensure the heading is above the overlay */
+      height: fit-content;
+      font-weight: bold;
+      color: #fff;
+      padding: 10px 20px;
+      /* Optional: add padding for a better look */
+      text-align: center;
+    }
 
-    
- </style>
+    .accordion-header {
+
+      margin-top: 20px;
+
+    }
+  </style>
 </head>
 
 <body class="service-details-page">
@@ -84,48 +88,48 @@ margin-top: 20px;
   <header id="header" class="header fixed-top">
 
     <div class="topbar d-flex align-items-center">
-     <div class="container d-flex justify-content-center justify-content-md-between">
-       <div class="contact-info d-flex align-items-center">
-         <!-- <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">Info@vious.com</a></i>
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <!-- <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">Info@vious.com</a></i>
          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+966 509 711 777</span></i> -->
-       </div>
-       <div class="social-links d-none d-md-flex align-items-center">
-         <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-       </div>
-     </div>
-   </div>
-   
-   <!-- End Top Bar -->
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
 
-   <div class="branding d-flex align-items-center">
+    <!-- End Top Bar -->
 
-     <div class="container position-relative d-flex align-items-center justify-content-between">
-       <a href="./index" class="logo d-flex align-items-center">
-         <!-- Uncomment the line below if you also wish to use an image logo -->
-         <!-- <img src="assets/img/logo.png" alt=""> -->
-         <img src="assets\img\viousBlack.png" alt="">
-       </a>
+    <div class="branding d-flex align-items-center">
 
-       <nav id="navmenu" class="navmenu">
-         <ul>
-          <li><a href="./index" class="active">Home</a></li>
-           <li><a href="./Aboutus">Overview</a></li>
-          <li><a href="./Experties">Expertise</a></li>
-           <li><a href="./Industries">Industries</a></li>
-           <li><a href="./partners">Partners</a></li>
-           <li><a href="./investors">Investors</a></li>
-           <li><a href="./insights">Insights</a></li>
-         </ul>
-         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-       </nav>
-     </div>
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="./index" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <img src="assets\img\viousBlack.png" alt="">
+        </a>
 
-   </div>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="./index" class="active">Home</a></li>
+            <li><a href="./Aboutus">Overview</a></li>
+            <li><a href="./Experties">Expertise</a></li>
+            <li><a href="./Industries">Industries</a></li>
+            <li><a href="./partners">Partners</a></li>
+            <li><a href="./investors">Investors</a></li>
+            <li><a href="./insights">Insights</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
 
- </header>
+    </div>
+
+  </header>
 
   <main class="main">
 
@@ -143,9 +147,9 @@ margin-top: 20px;
     </div><!-- End Page Title -->
 
     <!-- Section 1: Title with Background Cover -->
-  <section class="about-title">
-   <h1>Digital Transformation</h1> 
-  </section>
+    <section class="about-title">
+      <h1>Digital Transformation</h1>
+    </section>
 
 
     <!-- Service Details Section -->
@@ -157,169 +161,212 @@ margin-top: 20px;
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="services-list">
-              <a href="./digital-transformation" class="active" >Digital Transformation </a>
+              <a href="./digital-transformation" class="active">Digital Transformation </a>
               <a href="./professionalConsulting">Professional Consulting </a>
-              <a href="./AdvanceAnalyticsBigData">Advanced Analytics and 
+              <a href="./AdvanceAnalyticsBigData">Advanced Analytics and
                 Big Data</a>
-              <a href="./ArtificalIntelligenceAndML">Artificial Intelligence 
+              <a href="./ArtificalIntelligenceAndML">Artificial Intelligence
                 and Machine Learning</a>
               <a href="./IoT">Internet of Things (IoT) </a>
               <a href="./CloudComputing">Cloud Computing </a>
               <a href="./Cypersecurity">Cybersecurity</a>
               <a href="./Blockchain">Blockchain </a>
               <a href="./SmartCities">Smart Cities</a>
-              <a href="./ARandVR">Augmented Reality 
+              <a href="./ARandVR">Augmented Reality
                 and Virtual Reality</a>
               <a href="./RoboticsAndAutomation">Robotics and Automation</a>
               <a href="./InnovationAndIdeation">Innovation and Ideation</a>
 
             </div>
 
-           
+
           </div>
 
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
             <img src="assets/img/DigitalService.png" alt="" class="img-fluid services-img">
             <h3>Digital Transformation Solutions</h3>
             <p style="font-size: 20px;">
-              Helping businesses transition to 
-digital platforms and enhance 
-operational efficiency.
+              Helping businesses transition to
+              digital platforms and enhance
+              operational efficiency.
             </p>
 
-            <div  class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                  <button style="height: 100px; background-color: #ef0007; color:#ffffff; font-weight: bold;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                    DIGITAL STRATEGY CONSULTING 
+                  <button style="height: 100px; background-color: #ef0007; color:#ffffff; font-weight: bold;"
+                    class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    DIGITAL STRATEGY CONSULTING
                   </button>
                 </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse " aria-labelledby="panelsStayOpen-headingOne">
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse "
+                  aria-labelledby="panelsStayOpen-headingOne">
                   <div class="accordion-body">
                     <p> Digital Strategy Consulting involves assessing an organization's
                       current digital capabilities, defining a digital strategy aligned with
-                      business goals, and creating a roadmap for digital transformation.</p> 
-                      <h3><span>Digital Capabilities Assessment:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>   Evaluate existing digital tools, technologies, and processes. </li>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Identify strengths, weaknesses, opportunities, and threats.</span></li>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Benchmark against industry standards and competitors.</li>
-                      </ul>
-                      <h3><span>Digital Strategy Formulation:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Align digital initiatives with overall business goals and objectives.</li>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Identify key areas for digital investment and innovation.</span></li>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Develop strategic priorities and key performance indicators.</li>
-                      </ul>
-                      <h3><span>Digital Transformation Blueprint</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Outline short term and long term digital initiatives.</li>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Set clear milestones and timelines.</span></li>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Define resource requirements, including technology, personnel, and budget.</li>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Develop risk management and mitigation plans.</span></li>
+                      business goals, and creating a roadmap for digital transformation.</p>
+                    <h3><span>Digital Capabilities Assessment:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Evaluate existing
+                        digital tools, technologies, and processes. </li>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Identify strengths,
+                        weaknesses, opportunities, and threats.</span></li>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Benchmark against
+                        industry standards and competitors.</li>
+                    </ul>
+                    <h3><span>Digital Strategy Formulation:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Align digital
+                        initiatives with overall business goals and objectives.</li>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Identify key areas
+                        for digital investment and innovation.</span></li>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Develop strategic
+                        priorities and key performance indicators.</li>
+                    </ul>
+                    <h3><span>Digital Transformation Blueprint</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Outline short term
+                        and long term digital initiatives.</li>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Set clear
+                        milestones and timelines.</span></li>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Define resource
+                        requirements, including technology, personnel, and budget.</li>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Develop risk
+                        management and mitigation plans.</span></li>
 
-                      </ul>
-                    </div>
+                    </ul>
+                  </div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                  <button style=" height: 100px; background-color: #3d3d3d; color:#ffffff; font-weight: bold; " class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                    BUSINESS PROCESS AUTOMATION 
+                  <button style=" height: 100px; background-color: #3d3d3d; color:#ffffff; font-weight: bold; "
+                    class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    BUSINESS PROCESS AUTOMATION
                   </button>
                 </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingTwo">
                   <div class="accordion-body">
 
                     <p> Business Process Automation (BPA) focuses on automating
                       repetitive tasks and workflows to enhance efficiency, reduce
-                      operational costs, and improve accuracy.</p> 
-                      <h3><span>Automation Opportunitie Identification:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Conduct a thorough analysis of business processes. </li>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Identify tasks and workflows that are repetitive, time consuming, and prone to errors.</span></li>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Prioritize processes based on impact and feasibility of automation.</li>
-                      </ul>
-                     
-                      <h3><span>Automation Solutions Implementation:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Select appropriate automation tools and technologies (e.g., Robotic
-                          Process Automation (RPA), Artificial Intelligence (AI), Machine Learning (ML)).</li>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Develop and test automation scripts and workflows.</span></li>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Integrate automation solutions with existing systems and applications.</li>
-                        
+                      operational costs, and improve accuracy.</p>
+                    <h3><span>Automation Opportunitie Identification:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Conduct a thorough
+                        analysis of business processes. </li>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Identify tasks and
+                        workflows that are repetitive, time consuming, and prone to errors.</span></li>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Prioritize
+                        processes based on impact and feasibility of automation.</li>
+                    </ul>
 
-                      </ul>
-                      <h3><span>Monitoring and Optimizing Automated Processes:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Continuously monitor performance and efficiency of automated processes.</li>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Collect and analyze data to identify areas for improvement.</span></li>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>   Regularly update and optimize automation solutions to adapt to changing business needs.</li>
-                      </ul>
+                    <h3><span>Automation Solutions Implementation:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Select appropriate
+                        automation tools and technologies (e.g., Robotic
+                        Process Automation (RPA), Artificial Intelligence (AI), Machine Learning (ML)).</li>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Develop and test
+                        automation scripts and workflows.</span></li>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Integrate
+                        automation solutions with existing systems and applications.</li>
+
+
+                    </ul>
+                    <h3><span>Monitoring and Optimizing Automated Processes:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Continuously
+                        monitor performance and efficiency of automated processes.</li>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Collect and analyze
+                        data to identify areas for improvement.</span></li>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Regularly update
+                        and optimize automation solutions to adapt to changing business needs.</li>
+                    </ul>
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                  <button style="height: 100px;  background-color: #ef0007; color:#ffffff; font-weight: bold; " class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  <button style="height: 100px;  background-color: #ef0007; color:#ffffff; font-weight: bold; "
+                    class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
                     CHANGE MANAGEMENT
                   </button>
                 </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingThree">
                   <div class="accordion-body">
 
-                    <p>  Change Management involves implementing strategies to ensure
+                    <p> Change Management involves implementing strategies to ensure
                       smooth transitions and adoption of digital technologies, focusing
-                      on people, processes, and technology.</p> 
-                      <h3><span> Stakeholder Engagement and Communication:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Identify key stakeholders and their roles in thedigital transformation
-                          process. </li>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Develop a communication plan to keep stakeholders informed and
-                          engaged.</span></li>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>   Address concerns and resistance through transparent and continuous
-                          communication.</li>
-                      </ul>
-                     
-                      <h3><span>Training and Development:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>     Assess training needs for employees and stakeholders.</li>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Develop and deliver training programs to build digital skills and
-                          competencies.</span></li>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>   Provide ongoing support and resources to facilitate continuous
-                          learning.</li>
-                        
+                      on people, processes, and technology.</p>
+                    <h3><span> Stakeholder Engagement and Communication:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Identify key
+                        stakeholders and their roles in thedigital transformation
+                        process. </li>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Develop a
+                        communication plan to keep stakeholders informed and
+                        engaged.</span></li>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Address concerns
+                        and resistance through transparent and continuous
+                        communication.</li>
+                    </ul>
 
-                      </ul>
-                      <h3><span> Change Implementation and Support:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Develop a detailed change management plan, including timelines and
-                          responsibilities.</li>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>     Implement changes in a phased approach to minimize disruption.</span></li>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>   Provide support mechanisms, such as help desks and user support
-                          teams, to assist with the transition.</li>
-                      </ul>
-                      <h3><span>Measuring and Sustaining Change:</span></h3>
-                      <ul>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Monitor and evaluate the effectiveness of change initiatives.</li>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Collect feedback from employees and stakeholders to identify areas for
-                          improvement.</span></li>
-                        <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span>    Sustain change by embedding new practices into the organizational
-                          culture and ensuring continuous improvement.</li>
-                      </ul>
+                    <h3><span>Training and Development:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Assess training
+                        needs for employees and stakeholders.</li>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Develop and deliver
+                        training programs to build digital skills and
+                        competencies.</span></li>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Provide ongoing
+                        support and resources to facilitate continuous
+                        learning.</li>
+
+
+                    </ul>
+                    <h3><span> Change Implementation and Support:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Develop a detailed
+                        change management plan, including timelines and
+                        responsibilities.</li>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Implement changes
+                        in a phased approach to minimize disruption.</span></li>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Provide support
+                        mechanisms, such as help desks and user support
+                        teams, to assist with the transition.</li>
+                    </ul>
+                    <h3><span>Measuring and Sustaining Change:</span></h3>
+                    <ul>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Monitor and
+                        evaluate the effectiveness of change initiatives.</li>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Collect feedback
+                        from employees and stakeholders to identify areas for
+                        improvement.</span></li>
+                      <li><span style="color: #ef0007; font-size: 24px; font-weight: bold;">|</span> Sustain change by
+                        embedding new practices into the organizational
+                        culture and ensuring continuous improvement.</li>
+                    </ul>
 
                   </div>
                 </div>
               </div>
             </div>
-<P>
+            <P>
 
-</P>
+            </P>
             <p style="font-size: 20px;">
-These components of Digital Transformation Services ensure a
- comprehensive approach to digital transformation, addressing
- strategic planning, process optimization, and change management
- to achieve successful and sustainable outcomes.</p>
+              These components of Digital Transformation Services ensure a
+              comprehensive approach to digital transformation, addressing
+              strategic planning, process optimization, and change management
+              to achieve successful and sustainable outcomes.</p>
           </div>
 
         </div>
@@ -342,7 +389,7 @@ These components of Digital Transformation Services ensure a
             <div class="footer-contact pt-3">
               <p>Riyadh , Saudi Arabia</p>
               <p class="mt-3"><strong>Phone:</strong> <span>+966 509 711 777</span></p>
-              <p><strong>Email:</strong> <span>info@vious.com</span></p>
+              <p><strong>Email:</strong> <span><a href="mailto:info@vious.com">info@vious.com</a></span></p>
             </div>
             <div class="social-links d-flex mt-4">
               <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -353,48 +400,48 @@ These components of Digital Transformation Services ensure a
           </div>
         </div>
 
-     <div class="col-lg-2 col-md-3 footer-links">
+        <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
             <li><a href="./index">Home</a></li>
             <li><a href="./Aboutus">Overview</a></li>
             <li><a href="./Experties">Expertise</a></li>
-            <li><a href="./terms-of-use">Terms of use</a></li>
-            <li><a href="./privacy-policy">Privacy policy</a></li>
+            <li><a href="./terms-of-use">Terms </a></li>
+            <li><a href="./privacy-policy">Privacy </a></li>
           </ul>
         </div>
 
-         <div class="col-lg-2 col-md-3 footer-links">
-              <h4>Our Expertise</h4>
-              <ul>
-                <li><a href="./digital-transformation">Digital Transformation</a></li>
-                <li><a href="./professionalConsulting">professional Consulting</a></li>
-                <li><a href="./AdvanceAnalyticsBigData">Analytics and Big Data</a></li>
-                <li><a href="./ArtificalIntelligenceAndML">Artificial Intelligence</a></li>
-                <li><a href="./IoT">Internt of Things</a></li>
-                <li><a href="./CloudComputing">Cloud Computing</a></li>
-               
-    
-              </ul>
-            </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Expertise</h4>
+          <ul>
+            <li><a href="./digital-transformation">Digital Transformation</a></li>
+            <li><a href="./professionalConsulting">professional Consulting</a></li>
+            <li><a href="./AdvanceAnalyticsBigData">Analytics and Big Data</a></li>
+            <li><a href="./ArtificalIntelligenceAndML">Artificial Intelligence</a></li>
+            <li><a href="./IoT">Internt of Things</a></li>
+            <li><a href="./CloudComputing">Cloud Computing</a></li>
 
 
-            <div class="col-lg-2 col-md-3 footer-links">
-              <h4><br>       </h4>
-              <ul>
-                
-                <li><a href="./Cypersecurity">Cyperscurity</a></li>
-                <li><a href="./Blockchain">Blockchain</a></li>
-                <li><a href="./SmartCities">Futuristic Cities</a></li>
-                <li><a href="./ARandVR">Augmented Reality<br> and Virtual Reality </br></a></li>
-                <li><a href="./RoboticsAndAutomation">Automation and Robotics</a></li>
-                <li><a href="./InnovationAndIdeation">Innovation and Ideation</a></li>
-    
-              </ul>
-            </div>
-    
+          </ul>
+        </div>
 
-        
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4><br> </h4>
+          <ul>
+
+            <li><a href="./Cypersecurity">Cyperscurity</a></li>
+            <li><a href="./Blockchain">Blockchain</a></li>
+            <li><a href="./SmartCities">Futuristic Cities</a></li>
+            <li><a href="./ARandVR">Augmented Reality<br> and Virtual Reality </br></a></li>
+            <li><a href="./RoboticsAndAutomation">Automation and Robotics</a></li>
+            <li><a href="./InnovationAndIdeation">Innovation and Ideation</a></li>
+
+          </ul>
+        </div>
+
+
+
 
       </div>
     </div>
@@ -402,14 +449,15 @@ These components of Digital Transformation Services ensure a
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">VIOUS</strong> <span>All Rights Reserved</span> 2024</p>
       <div class="credits">
-       
+
       </div>
     </div>
 
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>

@@ -2,281 +2,298 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title> Partners - vious </title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title> Partners - vious </title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-  <style>
-    /* General Styles */
-  
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <style>
+        /* General Styles */
 
-    /* Section: Title with background cover */
-    .about-title {
-  background-image: url('assets/img/Partnerpage.jpg'); /* Add your background image */
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: lightgray;
-  font-size: 48px;
-  font-weight: bold;
-  text-align: center;
-  position: relative; /* Enable positioning for the overlay */
-  overflow: hidden;
-}
 
-.about-title::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
-  z-index: 1; /* Ensure the overlay is behind the content */
-}
+        /* Section: Title with background cover */
+        .about-title {
+            background-image: url('assets/img/Partnerpage.jpg');
+            /* Add your background image */
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: lightgray;
+            font-size: 48px;
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+            /* Enable positioning for the overlay */
+            overflow: hidden;
+        }
 
-.about-title h1 {
-  position: relative; /* Bring content above the overlay */
-  z-index: 2; /* Ensure the heading is above the overlay */
-  height: fit-content;
-  font-weight: bold;
-  color: #fff;
-  padding: 10px 20px; /* Optional: add padding for a better look */
-  text-align: center;
-}
- /* Animation setup */
- .sector {
-      opacity: 0;
-      transform: translateX(100px); /* Start from the right */
-      transition: all 0.8s ease-out;
-    }
+        .about-title::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Black overlay with 50% opacity */
+            z-index: 1;
+            /* Ensure the overlay is behind the content */
+        }
 
-    .sector-left {
-      transform: translateX(-100px); /* Start from the left */
-    }
+        .about-title h1 {
+            position: relative;
+            /* Bring content above the overlay */
+            z-index: 2;
+            /* Ensure the heading is above the overlay */
+            height: fit-content;
+            font-weight: bold;
+            color: #fff;
+            padding: 10px 20px;
+            /* Optional: add padding for a better look */
+            text-align: center;
+        }
 
-    .show {
-      opacity: 1;
-      transform: translateX(0); /* Reset the position */
-    }
+        /* Animation setup */
+        .sector {
+            opacity: 0;
+            transform: translateX(100px);
+            /* Start from the right */
+            transition: all 0.8s ease-out;
+        }
 
-    .pint {
+        .sector-left {
+            transform: translateX(-100px);
+            /* Start from the left */
+        }
 
-     border-left: 2px solid #ef0007;
-     padding-left: 10px;
-     color: #3d3d3d;
-     font-weight: bold;
-    }
-    
+        .show {
+            opacity: 1;
+            transform: translateX(0);
+            /* Reset the position */
+        }
 
-  /* Left Section Styling */
-.left-section {
-    background-color: #f8f9fa00;
-    padding: 20px;
-    border-radius: 8px;
-    position: sticky;
-    top: 100px; /* Keeps the section sticky at 20px from the top of the viewport */
-    height: fit-content;
-}
+        .pint {
 
-/* Disable sticky on mobile screens (max-width: 768px) */
-@media (max-width: 768px) {
-    .left-section {
-        position: static;
-    }
-}
+            border-left: 2px solid #ef0007;
+            padding-left: 10px;
+            color: #3d3d3d;
+            font-weight: bold;
+        }
 
-.left-section .title {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #007bff;
-    animation: fadeInLeft 1.5s ease-out;
-}
 
-.left-section .paragraph {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #333;
-    animation: fadeInLeft 1.5s ease-out;
-}
+        /* Left Section Styling */
+        .left-section {
+            background-color: #f8f9fa00;
+            padding: 20px;
+            border-radius: 8px;
+            position: sticky;
+            top: 100px;
+            /* Keeps the section sticky at 20px from the top of the viewport */
+            height: fit-content;
+        }
 
-/* Add keyframes for animated characters */
-@keyframes fadeInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
+        /* Disable sticky on mobile screens (max-width: 768px) */
+        @media (max-width: 768px) {
+            .left-section {
+                position: static;
+            }
+        }
 
-/* Category Title Styling */
-.category-title {
-    font-weight: bold;
-    color: #ef0007;
-    text-align: left;
-    margin-bottom: 10px;
-    border-left: #ef0007 solid 2px;
-}
+        .left-section .title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #007bff;
+            animation: fadeInLeft 1.5s ease-out;
+        }
 
-/* Partner box styling */
-.partner-box {
-    display: flex;
-    justify-content: center;
-}
+        .left-section .paragraph {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #333;
+            animation: fadeInLeft 1.5s ease-out;
+        }
 
-.flip-box {
-    background-color: transparent;
-    width: 100%;
-    height: 200px;
-    perspective: 1000px;
-}
+        /* Add keyframes for animated characters */
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
 
-.flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
 
-.flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
-}
+        /* Category Title Styling */
+        .category-title {
+            font-weight: bold;
+            color: #ef0007;
+            text-align: left;
+            margin-bottom: 10px;
+            border-left: #ef0007 solid 2px;
+        }
 
-.flip-box-front, .flip-box-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
+        /* Partner box styling */
+        .partner-box {
+            display: flex;
+            justify-content: center;
+        }
 
-.flip-box-front {
-    background-color: #fff;
-}
+        .flip-box {
+            background-color: transparent;
+            width: 100%;
+            height: 200px;
+            perspective: 1000px;
+        }
 
-.flip-box-back {
-    background-color: #ef0007;
-    color: white;
-    transform: rotateY(180deg);
-    padding: 15px;
-}
+        .flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
 
-.flip-box img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-}
+        .flip-box:hover .flip-box-inner {
+            transform: rotateY(180deg);
+        }
 
-/* AOS Animations */
-[data-aos="fade-right"] {
-    opacity: 0;
-    transform: translateX(-50px);
-    transition-property: opacity, transform;
-}
-[data-aos="fade-right"].aos-animate {
-    opacity: 1;
-    transform: translateX(0);
-}
+        .flip-box-front,
+        .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-[data-aos="flip-left"] {
-    transform: rotateY(-90deg);
-    transition-property: transform;
-}
-[data-aos="flip-left"].aos-animate {
-    transform: rotateY(0);
-}
+        }
 
-  </style>
-  
+        .flip-box-front {
+            background-color: #fff;
+        }
+
+        .flip-box-back {
+            background-color: #ef0007;
+            color: white;
+            transform: rotateY(180deg);
+            padding: 15px;
+        }
+
+        .flip-box img {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* AOS Animations */
+        [data-aos="fade-right"] {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition-property: opacity, transform;
+        }
+
+        [data-aos="fade-right"].aos-animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        [data-aos="flip-left"] {
+            transform: rotateY(-90deg);
+            transition-property: transform;
+        }
+
+        [data-aos="flip-left"].aos-animate {
+            transform: rotateY(0);
+        }
+    </style>
+
 </head>
 
 <body class="starter-page-page">
 
-  <header id="header" class="header fixed-top">
+    <header id="header" class="header fixed-top">
 
-    <div class="topbar d-flex align-items-center">
-     <div class="container d-flex justify-content-center justify-content-md-between">
-       <div class="contact-info d-flex align-items-center">
-         <!-- <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">Info@vious.com</a></i>
+        <div class="topbar d-flex align-items-center">
+            <div class="container d-flex justify-content-center justify-content-md-between">
+                <div class="contact-info d-flex align-items-center">
+                    <!-- <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">Info@vious.com</a></i>
          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+966 509 711 777</span></i> -->
-       </div>
-       <div class="social-links d-none d-md-flex align-items-center">
-         <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-       </div>
-     </div>
-   </div>
-   
-   <!-- End Top Bar -->
+                </div>
+                <div class="social-links d-none d-md-flex align-items-center">
+                    <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
 
-   <div class="branding d-flex align-items-center">
+        <!-- End Top Bar -->
 
-     <div class="container position-relative d-flex align-items-center justify-content-between">
-       <a href="./index" class="logo d-flex align-items-center">
-         <!-- Uncomment the line below if you also wish to use an image logo -->
-         <!-- <img src="assets/img/logo.png" alt=""> -->
-         <img src="assets\img\viousBlack.png" alt="">
-       </a>
+        <div class="branding d-flex align-items-center">
 
-       <nav id="navmenu" class="navmenu">
-         <ul>
-           <li><a href="./index" class="active">Home</a></li>
-            <li><a href="./Aboutus">Overview</a></li>
-           <li><a href="./Experties">Expertise</a></li>
-           <li><a href="./Industries">Industries</a></li>
-           <li><a href="./partners">Partners</a></li>
-           <li><a href="./investors">Investors</a></li>
-           <li><a href="./insights">Insights</a></li>
-         </ul>
-         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-       </nav>
-     </div>
+            <div class="container position-relative d-flex align-items-center justify-content-between">
+                <a href="./index" class="logo d-flex align-items-center">
+                    <!-- Uncomment the line below if you also wish to use an image logo -->
+                    <!-- <img src="assets/img/logo.png" alt=""> -->
+                    <img src="assets\img\viousBlack.png" alt="">
+                </a>
 
-   </div>
+                <nav id="navmenu" class="navmenu">
+                    <ul>
+                        <li><a href="./index" class="active">Home</a></li>
+                        <li><a href="./Aboutus">Overview</a></li>
+                        <li><a href="./Experties">Expertise</a></li>
+                        <li><a href="./Industries">Industries</a></li>
+                        <li><a href="./partners">Partners</a></li>
+                        <li><a href="./investors">Investors</a></li>
+                        <li><a href="./insights">Insights</a></li>
+                    </ul>
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                </nav>
+            </div>
 
- </header>
+        </div>
 
-  <main class="main">
+    </header>
 
-    <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade">
-      <!-- <div class="container">
+    <main class="main">
+
+        <!-- Page Title -->
+        <div class="page-title dark-background" data-aos="fade">
+            <!-- <div class="container">
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
@@ -285,711 +302,813 @@
         </nav>
         <h1>Starter Page</h1>
       </div> -->
-    </div><!-- End Page Title -->
+        </div><!-- End Page Title -->
 
-    <!-- Section 1: Title with Background Cover -->
-  <section class="about-title">
-    <h1>Partners</h1>
-  </section>
-
-
-
-   
- 
+        <!-- Section 1: Title with Background Cover -->
+        <section class="about-title">
+            <h1>Partners</h1>
+        </section>
 
 
 
 
-  
 
-  
-  <Section class="Industries" style="background-color: #ffffff00;">
-    <div class="container py-5">
-        <div class="row">
-            <!-- Left Section with Title and Paragraph (sticky) -->
-            <div class="col-lg-4 left-section" data-aos="fade-left">
 
-                 <!-- Section Title -->
-    <div class="section-title" style=" margin-top: 50px;">
-        <span style="font-size: 36px;">potential Partners</span>
-        <h2>potential Partners</h2>
-      </div>
 
-                <!-- <h2 class="title">Welcome to Our Partners Page</h2> -->
-                <p class="paragraph">At VIOUS, we are proud to have collaborated with a diverse range of distinguished companies that share our determination and commitment to succeed in the era of The Fourth Industrial Revolution. Our partners include industry leaders, leading technology providers and innovators each, contributing their unique capabilities and perspectives that enrich our offerings. Together, we are dedicated to providing our clients with tailored digital technology expertise and solutions that drive success in today’s competitive environment. Explore our prominent partnerships and discover how our joint expertise can help you achieve your goals.</p>
+
+
+
+
+
+        <Section class="Industries" style="background-color: #ffffff00;">
+            <div class="container py-5">
+                <div class="row">
+                    <!-- Left Section with Title and Paragraph (sticky) -->
+                    <div class="col-lg-4 left-section" data-aos="fade-left">
+
+                        <!-- Section Title -->
+                        <div class="section-title" style=" margin-top: 50px;">
+                            <span style="font-size: 36px;">potential Partners</span>
+                            <h2>potential Partners</h2>
+                        </div>
+
+                        <!-- <h2 class="title">Welcome to Our Partners Page</h2> -->
+                        <p class="paragraph">At Vious, we consider a diverse range of distinguished companies that share our determination and commitment to
+                             succeed in the era of The Fourth Industrial Revolution. Our potential partners include industry leaders, leading technology providers
+                              and innovators each, contributing their unique capabilities and perspectives that enrich our offerings. Together, can provide our clients
+                               with tailored digital technology expertise and solutions that drive success in today’s competitive environment. Explore our prominent 
+                               partnerships and discover how our joint expertise can help you achieve your goals.</p>
+                    </div>
+
+                    <!-- Right Section with Categories and Partners -->
+                    <div class="col-lg-8">
+
+                        <!-- First Category: Digital Transformation -->
+                        <div class="row mb-5 align-items-start">
+                            <div class="col-md-12 category-title" data-aos="fade-right">
+                                <h3>Digital Transformation Services </h3>
+                            </div>
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets/img/clients/client-1.png" alt="Partner 1"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>A U.S.-based business offering digital transformation services in product
+                                                development, strategy, AI, and analytics.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets/img/clients/client-3.png" alt="Partner 2"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>Daffodil, based in India, provides digital transformation services across
+                                                industries, including automation, security, and cloud.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets/img/clients/client-5.png" alt="Partner 3"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>
+                                                A Michigan-based company offering digital transformation services,
+                                                including consulting, AI, automation, cloud, and change management.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- First Category: Digital Transformation -->
+                        <div class="row mb-5 align-items-start">
+                            <div class="col-md-12 category-title" data-aos="fade-right">
+                                <h3>Professional Consulting </h3>
+                            </div>
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets/img/clients/client-2.png" alt="Partner 1"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>Levvel, located in France, is a technology consultancy specializing in
+                                                change management, digital transformation, and CRM.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets/img/clients/client-4.png" alt="Partner 2"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>This business provides digital transformation services focused on change
+                                                management, process improvement, automation, and cloud strategy.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets/img/clients/client-6.png" alt="Partner 3"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>This technology consulting firm offers digital transformation services,
+                                                including software development, security, cloud infrastructure, and
+                                                consulting.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <!-- First Category: Digital Transformation -->
+                        <div class="row mb-5 align-items-start">
+                            <div class="col-md-12 category-title" data-aos="fade-right">
+                                <h3>Advanced Analytics and Big Data</h3>
+                            </div>
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets/img/clients/client-7.png" alt="Partner 1"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>Kavi Global, based in the U.S., is a data analytics firm offering
+                                                advanced strategy and digital transformation solutions.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+                        <!-- Second Category: Artificial Intelligence -->
+                        <div class="row mb-5 align-items-start">
+                            <div class="col-md-12 category-title" data-aos="fade-right">
+                                <h3>Artificial Intelligence and Machine Learning</h3>
+                            </div>
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets/img/clients/client-8.png" alt="Partner 4"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>Faktion, based in Belgium, offers AI consulting and development services,
+                                                helping businesses create tailored AI strategies.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets/img/clients/client-9.png" alt="Partner 5"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>InData Labs, located in Cyprus, provides AI and data science consulting,
+                                                driving innovation across various industries.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets/img/clients/client-10.png" alt="Partner 6"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>Strong Analytics, based in the U.S., delivers custom machine learning
+                                                solutions for healthcare, gaming, manufacturing, and sports industries.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets/img/clients/client-11.png" alt="Partner 6"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>Based in Ukraine, this business specializes in RPA solutions, helping
+                                                SMEs automate tasks and enhance efficiency through AI and machine
+                                                learning.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Second Category: Artificial Intelligence -->
+                        <div class="row mb-5 align-items-start">
+                            <div class="col-md-12 category-title" data-aos="fade-right">
+                                <h3>Cyperscurity</h3>
+                            </div>
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets\img\clients\client-12.png" alt="Partner 4"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>EclecticIQ, based in Amsterdam, offers a unique threat intelligence
+                                                platform that analyzes, correlates, and shares cyber threat data.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets\img\clients\client-13.png" alt="Partner 5"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>Digital Shadows, located in the UK, offers threat intelligence and
+                                                digital risk protection, helping businesses manage vulnerabilities and
+                                                external threats.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets\img\clients\client-14.png" alt="Partner 6"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>Tessian, based in the UK, leverages machine learning for data protection,
+                                                preventing email attacks and sensitive data loss.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets\img\clients\client-15.png" alt="Partner 6"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>ThreatConnect, based in the USA, offers a Threat Intelligence Platform
+                                                that integrates threat data with security tools and automates responses
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets\img\clients\client-16.png" alt="Partner 6"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>
+                                                Coalfire offers cybersecurity advisory services, helping organizations
+                                                manage risks, protect data, and respond to incidents.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets\img\clients\client-17.png" alt="Partner 6"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>
+                                                Cygenta, located in the UK, provides cybersecurity consultancy services,
+                                                including advisory, training, and assessments for improved risk
+                                                management resilience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets\img\clients\client-18.png" alt="Partner 6"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>Kroll offers comprehensive cybersecurity services to protect, detect, and
+                                                respond to cyber attacks, managing the entire threat lifecycle</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+
+                        <!-- Second Category: Artificial Intelligence -->
+                        <div class="row mb-5 align-items-start">
+                            <div class="col-md-12 category-title" data-aos="fade-right">
+                                <h3>Internet of Things</h3>
+                            </div>
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets/img/clients/client-24.png" alt="Partner 4"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>This Swiss company provides IoT solutions for smart cities, including
+                                                smart lighting and energy management systems, aiming to create scalable,
+                                                secure urban infrastructure.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets\img\clients\client-25.png" alt="Partner 5"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>Tvilight, based in the Netherlands, specializes in smart street lighting
+                                                solutions, offering wireless controllers and management software to
+                                                reduce energy consumption and enhance public safety.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets\img\clients\client-26.png" alt="Partner 6"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>The business offers Smart World Pro, a digital twin platform to help
+                                                cities and developers manage infrastructure and urban planning
+                                                sustainably.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets\img\clients\client-27.png" alt="Partner 6"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>This Spanish company specializes in tailored IoT projects and vertical
+                                                applications, designing software and hardware to enhance competitiveness
+                                                in industries and smart cities.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets\img\clients\client-28.png" alt="Partner 6"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>
+                                                specializes in smart infrastructure and transportation, offering IoT
+                                                solutions for smart cities, including smart parking, waste management.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets\img\clients\client-29.png" alt="Partner 6"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>This business provides smart city solutions, enhancing infrastructure and
+                                                governance for improved decision-making in public services.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets\img\clients\client-37.png" alt="Partner 6"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>specializes in smart transport and infrastructure, utilizing AI and
+                                                computer vision for smart parking and urban space management to reduce
+                                                traffic congestion and optimize public space use.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+
+                        <!-- Second Category: Artificial Intelligence -->
+                        <div class="row mb-5 align-items-start">
+                            <div class="col-md-12 category-title" data-aos="fade-right">
+                                <h3>Blockchain</h3>
+                            </div>
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets\img\clients\client-19.png" alt="Partner 4"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p> this company provides blockchain infrastructure, decentralized
+                                                application development, and engineering consulting for custom
+                                                blockchain solutions and Web3 auditing services.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets\img\clients\client-20.png" alt="Partner 5"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>
+                                                This business provides blockchain consulting and development, enhancing
+                                                transparency and efficiency in sectors like supply chain finance and
+                                                healthcare.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets\img\clients\client-21.png" alt="Partner 6"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>offers a blockchain-powered platform to automate global supply chain
+                                                workflows, enhancing efficiency, compliance, and visibility for
+                                                companies and government organizations.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets\img\clients\client-22.png" alt="Partner 6"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p> provides secure custody for digital assets and cryptocurrencies, along
+                                                with regulated financial services and infrastructure. BitGo’s technology
+                                                powers many systems.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets\img\clients\client-23.png" alt="Partner 6"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p> based in Belgium, provides blockchain development, enabling businesses
+                                                to integrate blockchain seamlessly and create value by connecting
+                                                people, processes, and technology.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <!-- Second Category: Artificial Intelligence -->
+                        <div class="row mb-5 align-items-start">
+                            <div class="col-md-12 category-title" data-aos="fade-right">
+                                <h3>Robotics and Automation</h3>
+                            </div>
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets\img\clients\client-30.png" alt="Partner 4"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>This business specializes in identifying automation opportunities,
+                                                implementing RPA, and optimizing digital transformation strategies to
+                                                boost efficiency and operational excellence.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets/img/clients/client-31.png" alt="Partner 5"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p> provides consulting and managed services for implementing RPA, focusing
+                                                on enhancing automation strategies across various industries</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets\img\clients\client-32.png" alt="Partner 6"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>Based in the UK, this company offers RPA solutions from strategy to
+                                                deployment, helping businesses automate and optimize workflows.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets\img\clients\client-33.png" alt="Partner 6"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>This Indian company offers Robotic Process Automation (RPA) to help
+                                                enterprises streamline operations, making them more intelligent and
+                                                error-free.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+
+                        <!-- Second Category: Artificial Intelligence -->
+                        <div class="row mb-5 align-items-start">
+                            <div class="col-md-12 category-title" data-aos="fade-right">
+                                <h3>Augmented Reality and Virtual Reality</h3>
+                            </div>
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets/img/clients/client-34.png" alt="Partner 4"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>provides tailored AR and VR solutions for industrial use, from product
+                                                visualization to complex interactive modules, enhancing customer
+                                                experience, training, efficiency, and competitiveness.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets/img/clients/client-35.png" alt="Partner 5"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>specializes in 360 VR content, offering services like 360 VR video
+                                                production, post-production, photography, visualization, virtual tours,
+                                                AR production, and 360 stitching services.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 partner-box" data-aos="flip-left">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <img src="assets\img\clients\client-36.png" alt="Partner 6"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <p>based in Canada, offers customized VR training, AR visualization, and 360
+                                                video solutions across healthcare, construction, and education, working
+                                                with clients like Toyota</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Add more categories similarly -->
+                    </div>
+                </div>
             </div>
-    
-            <!-- Right Section with Categories and Partners -->
-            <div class="col-lg-8">
-    
-                <!-- First Category: Digital Transformation -->
-                <div class="row mb-5 align-items-start">
-                    <div class="col-md-12 category-title" data-aos="fade-right">
-                        <h3>Digital Transformation Services </h3>
-                    </div>
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets/img/clients/client-1.png" alt="Partner 1" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>A U.S.-based business offering digital transformation services in product development, strategy, AI, and analytics.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
 
-                    
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets/img/clients/client-3.png" alt="Partner 2" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>Daffodil, based in India, provides digital transformation services across industries, including automation, security, and cloud.</p>
-                                </div>
-                            </div>
+    </main>
+
+    <footer id="footer" class="footer position-relative dark-background">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-about">
+                        <img src="assets/img/ViousWhite.png" alt="" id="footerLog">
+
+                        <!-- <a href="index.html" class="logo sitename">VIOUS</a> -->
+                        <div class="footer-contact pt-3">
+                            <p>Riyadh , Saudi Arabia</p>
+                            <p class="mt-3"><strong>Phone:</strong> <span>+966 509 711 777</span></p>
+                            <p><strong>Email:</strong> <span><a href="mailto:info@vious.com">info@vious.com</a></span></p>
                         </div>
-                    </div>
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets/img/clients/client-5.png" alt="Partner 3" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>
-                                        A Michigan-based company offering digital transformation services, including consulting, AI, automation, cloud, and change management.</p>
-                                </div>
-                            </div>
+                        <div class="social-links d-flex mt-4">
+                            <a href=""><i class="bi bi-twitter-x"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
 
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="./index">Home</a></li>
+                        <li><a href="./Aboutus">Overview</a></li>
+                        <li><a href="./Experties">Expertise</a></li>
+                        <li><a href="./terms-of-use">Terms</a></li>
+                        <li><a href="./privacy-policy">Privacy</a></li>
+                    </ul>
+                </div>
 
-<!-- First Category: Digital Transformation -->
-<div class="row mb-5 align-items-start">
-    <div class="col-md-12 category-title" data-aos="fade-right">
-        <h3>Professional Consulting </h3>
-    </div>
-    <div class="col-md-4 partner-box" data-aos="flip-left">
-        <div class="flip-box">
-            <div class="flip-box-inner">
-                <div class="flip-box-front">
-                    <img src="assets/img/clients/client-2.png" alt="Partner 1" class="img-fluid">
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Our Expertise</h4>
+                    <ul>
+                        <li><a href="./digital-transformation">Digital Transformation</a></li>
+                        <li><a href="./professionalConsulting">professional Consulting</a></li>
+                        <li><a href="./AdvanceAnalyticsBigData">Analytics and Big Data</a></li>
+                        <li><a href="./ArtificalIntelligenceAndML">Artificial Intelligence</a></li>
+                        <li><a href="./IoT">Internt of Things</a></li>
+                        <li><a href="./CloudComputing">Cloud Computing</a></li>
+
+
+                    </ul>
                 </div>
-                <div class="flip-box-back">
-                    <p>Levvel, located in France, is a technology consultancy specializing in change management, digital transformation, and CRM.</p>
+
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4><br> </h4>
+                    <ul>
+
+                        <li><a href="./Cypersecurity">Cyperscurity</a></li>
+                        <li><a href="./Blockchain">Blockchain</a></li>
+                        <li><a href="./SmartCities">Futuristic Cities</a></li>
+                        <li><a href="./ARandVR">Augmented Reality<br> and Virtual Reality </br></a></li>
+                        <li><a href="./RoboticsAndAutomation">Automation and Robotics</a></li>
+                        <li><a href="./InnovationAndIdeation">Innovation and Ideation</a></li>
+
+                    </ul>
                 </div>
+
+
+
+
             </div>
         </div>
-    </div>
 
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">VIOUS</strong> <span>All Rights Reserved</span>
+                2024</p>
+            <div class="credits">
 
-    
-    <div class="col-md-4 partner-box" data-aos="flip-left">
-        <div class="flip-box">
-            <div class="flip-box-inner">
-                <div class="flip-box-front">
-                    <img src="assets/img/clients/client-4.png" alt="Partner 2" class="img-fluid">
-                </div>
-                <div class="flip-box-back">
-                    <p>This business provides digital transformation services focused on change management, process improvement, automation, and cloud strategy.</p>
-                </div>
             </div>
         </div>
-    </div>
-    <div class="col-md-4 partner-box" data-aos="flip-left">
-        <div class="flip-box">
-            <div class="flip-box-inner">
-                <div class="flip-box-front">
-                    <img src="assets/img/clients/client-6.png" alt="Partner 3" class="img-fluid">
-                </div>
-                <div class="flip-box-back">
-                    <p>This technology consulting firm offers digital transformation services, including software development, security, cloud infrastructure, and consulting.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-    
-
-
-<!-- First Category: Digital Transformation -->
-<div class="row mb-5 align-items-start">
-    <div class="col-md-12 category-title" data-aos="fade-right">
-        <h3>Advanced Analytics and Big Data</h3>
-    </div>
-    <div class="col-md-4 partner-box" data-aos="flip-left">
-        <div class="flip-box">
-            <div class="flip-box-inner">
-                <div class="flip-box-front">
-                    <img src="assets/img/clients/client-7.png" alt="Partner 1" class="img-fluid">
-                </div>
-                <div class="flip-box-back">
-                    <p>Kavi Global, based in the U.S., is a data analytics firm offering advanced strategy and digital transformation solutions.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    
-   
-</div>
-
-                <!-- Second Category: Artificial Intelligence -->
-                <div class="row mb-5 align-items-start">
-                    <div class="col-md-12 category-title" data-aos="fade-right">
-                        <h3>Artificial Intelligence and Machine Learning</h3>
-                    </div>
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets/img/clients/client-8.png" alt="Partner 4" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>Faktion, based in Belgium, offers AI consulting and development services, helping businesses create tailored AI strategies.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets/img/clients/client-9.png" alt="Partner 5" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>InData Labs, located in Cyprus, provides AI and data science consulting, driving innovation across various industries.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets/img/clients/client-10.png" alt="Partner 6" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>Strong Analytics, based in the U.S., delivers custom machine learning solutions for healthcare, gaming, manufacturing, and sports industries.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets/img/clients/client-11.png" alt="Partner 6" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>Based in Ukraine, this business specializes in RPA solutions, helping SMEs automate tasks and enhance efficiency through AI and machine learning.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                 <!-- Second Category: Artificial Intelligence -->
-                 <div class="row mb-5 align-items-start">
-                    <div class="col-md-12 category-title" data-aos="fade-right">
-                        <h3>Cyperscurity</h3>
-                    </div>
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets\img\clients\client-12.png" alt="Partner 4" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>EclecticIQ, based in Amsterdam, offers a unique threat intelligence platform that analyzes, correlates, and shares cyber threat data.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets\img\clients\client-13.png" alt="Partner 5" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>Digital Shadows, located in the UK, offers threat intelligence and digital risk protection, helping businesses manage vulnerabilities and external threats.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets\img\clients\client-14.png" alt="Partner 6" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>Tessian, based in the UK, leverages machine learning for data protection, preventing email attacks and sensitive data loss.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets\img\clients\client-15.png" alt="Partner 6" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>ThreatConnect, based in the USA, offers a Threat Intelligence Platform that integrates threat data with security tools and automates responses</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets\img\clients\client-16.png" alt="Partner 6" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>
-                                        Coalfire offers cybersecurity advisory services, helping organizations manage risks, protect data, and respond to incidents.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets\img\clients\client-17.png" alt="Partner 6" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>
-                                        Cygenta, located in the UK, provides cybersecurity consultancy services, including advisory, training, and assessments for improved risk management resilience.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets\img\clients\client-18.png" alt="Partner 6" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>Kroll offers comprehensive cybersecurity services to protect, detect, and respond to cyber attacks, managing the entire threat lifecycle</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-
-
-
-                 <!-- Second Category: Artificial Intelligence -->
-                 <div class="row mb-5 align-items-start">
-                    <div class="col-md-12 category-title" data-aos="fade-right">
-                        <h3>Internet of Things</h3>
-                    </div>
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets/img/clients/client-24.png" alt="Partner 4" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>This Swiss company provides IoT solutions for smart cities, including smart lighting and energy management systems, aiming to create scalable, secure urban infrastructure.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets\img\clients\client-25.png" alt="Partner 5" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>Tvilight, based in the Netherlands, specializes in smart street lighting solutions, offering wireless controllers and management software to reduce energy consumption and enhance public safety.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets\img\clients\client-26.png" alt="Partner 6" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>The business offers Smart World Pro, a digital twin platform to help cities and developers manage infrastructure and urban planning sustainably.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets\img\clients\client-27.png" alt="Partner 6" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>This Spanish company specializes in tailored IoT projects and vertical applications, designing software and hardware to enhance competitiveness in industries and smart cities.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets\img\clients\client-28.png" alt="Partner 6" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>
-                                         specializes in smart infrastructure and transportation, offering IoT solutions for smart cities, including smart parking, waste management.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets\img\clients\client-29.png" alt="Partner 6" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>This business provides smart city solutions, enhancing infrastructure and governance for improved decision-making in public services.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets\img\clients\client-37.png" alt="Partner 6" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>specializes in smart transport and infrastructure, utilizing AI and computer vision for smart parking and urban space management to reduce traffic congestion and optimize public space use.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-
-
-
-
-                 <!-- Second Category: Artificial Intelligence -->
-                 <div class="row mb-5 align-items-start">
-                    <div class="col-md-12 category-title" data-aos="fade-right">
-                        <h3>Blockchain</h3>
-                    </div>
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets\img\clients\client-19.png" alt="Partner 4" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p> this company provides blockchain infrastructure, decentralized application development, and engineering consulting for custom blockchain solutions and Web3 auditing services.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets\img\clients\client-20.png" alt="Partner 5" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>
-                                        This business provides blockchain consulting and development, enhancing transparency and efficiency in sectors like supply chain finance and healthcare.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets\img\clients\client-21.png" alt="Partner 6" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>offers a blockchain-powered platform to automate global supply chain workflows, enhancing efficiency, compliance, and visibility for companies and government organizations.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets\img\clients\client-22.png" alt="Partner 6" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>  provides secure custody for digital assets and cryptocurrencies, along with regulated financial services and infrastructure. BitGo’s technology powers many systems.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets\img\clients\client-23.png" alt="Partner 6" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p> based in Belgium, provides blockchain development, enabling businesses to integrate blockchain seamlessly and create value by connecting people, processes, and technology.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                 <!-- Second Category: Artificial Intelligence -->
-                 <div class="row mb-5 align-items-start">
-                    <div class="col-md-12 category-title" data-aos="fade-right">
-                        <h3>Robotics and Automation</h3>
-                    </div>
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets\img\clients\client-30.png" alt="Partner 4" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>This business specializes in identifying automation opportunities, implementing RPA, and optimizing digital transformation strategies to boost efficiency and operational excellence.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets/img/clients/client-31.png" alt="Partner 5" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p> provides consulting and managed services for implementing RPA, focusing on enhancing automation strategies across various industries</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets\img\clients\client-32.png" alt="Partner 6" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>Based in the UK, this company offers RPA solutions from strategy to deployment, helping businesses automate and optimize workflows.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets\img\clients\client-33.png" alt="Partner 6" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>This Indian company offers Robotic Process Automation (RPA) to help enterprises streamline operations, making them more intelligent and error-free.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-
-
-
-                 <!-- Second Category: Artificial Intelligence -->
-                 <div class="row mb-5 align-items-start">
-                    <div class="col-md-12 category-title" data-aos="fade-right">
-                        <h3>Augmented Reality and Virtual Reality</h3>
-                    </div>
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets/img/clients/client-34.png" alt="Partner 4" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>provides tailored AR and VR solutions for industrial use, from product visualization to complex interactive modules, enhancing customer experience, training, efficiency, and competitiveness.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets/img/clients/client-35.png" alt="Partner 5" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>specializes in 360 VR content, offering services like 360 VR video production, post-production, photography, visualization, virtual tours, AR production, and 360 stitching services.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 partner-box" data-aos="flip-left">
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <img src="assets\img\clients\client-36.png" alt="Partner 6" class="img-fluid">
-                                </div>
-                                <div class="flip-box-back">
-                                    <p>based in Canada, offers customized VR training, AR visualization, and 360 video solutions across healthcare, construction, and education, working with clients like Toyota</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Add more categories similarly -->
-            </div>
-        </div>
-    </div>
- 
-
-  </main>
-
-  <footer id="footer" class="footer position-relative dark-background">
-
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6">
-          <div class="footer-about">
-            <img src="assets/img/ViousWhite.png" alt="" id="footerLog">
-
-            <!-- <a href="index.html" class="logo sitename">VIOUS</a> -->
-            <div class="footer-contact pt-3">
-              <p>Riyadh , Saudi Arabia</p>
-              <p class="mt-3"><strong>Phone:</strong> <span>+966 509 711 777</span></p>
-              <p><strong>Email:</strong> <span>info@vious.com</span></p>
-            </div>
-            <div class="social-links d-flex mt-4">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-     <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="./index">Home</a></li>
-            <li><a href="./Aboutus">Overview</a></li>
-            <li><a href="./Experties">Expertise</a></li>
-            <li><a href="./terms-of-use">Terms of use</a></li>
-            <li><a href="./privacy-policy">Privacy policy</a></li>
-          </ul>
-        </div>
-
-         <div class="col-lg-2 col-md-3 footer-links">
-              <h4>Our Expertise</h4>
-              <ul>
-                <li><a href="./digital-transformation">Digital Transformation</a></li>
-                <li><a href="./professionalConsulting">professional Consulting</a></li>
-                <li><a href="./AdvanceAnalyticsBigData">Analytics and Big Data</a></li>
-                <li><a href="./ArtificalIntelligenceAndML">Artificial Intelligence</a></li>
-                <li><a href="./IoT">Internt of Things</a></li>
-                <li><a href="./CloudComputing">Cloud Computing</a></li>
-               
-    
-              </ul>
-            </div>
-
-
-            <div class="col-lg-2 col-md-3 footer-links">
-              <h4><br>       </h4>
-              <ul>
-                
-                <li><a href="./Cypersecurity">Cyperscurity</a></li>
-                <li><a href="./Blockchain">Blockchain</a></li>
-                <li><a href="./SmartCities">Futuristic Cities</a></li>
-                <li><a href="./ARandVR">Augmented Reality<br> and Virtual Reality </br></a></li>
-                <li><a href="./RoboticsAndAutomation">Automation and Robotics</a></li>
-                <li><a href="./InnovationAndIdeation">Innovation and Ideation</a></li>
-    
-              </ul>
-            </div>
-    
-
-        
-
-      </div>
-    </div>
-
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">VIOUS</strong> <span>All Rights Reserved</span> 2024</p>
-      <div class="credits">
-       
-      </div>
-    </div>
-
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <!-- <script>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <!-- <script>
     document.addEventListener("DOMContentLoaded", function () {
       const sectors = document.querySelectorAll(".sector");
 
@@ -1008,16 +1127,16 @@
     });
   </script> -->
 
-  <!-- AOS Animation JS -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 2000, // Animation duration
-    once: false, // Animation trigger on every scroll
-  });
-</script>
+    <!-- AOS Animation JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000, // Animation duration
+            once: false, // Animation trigger on every scroll
+        });
+    </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
